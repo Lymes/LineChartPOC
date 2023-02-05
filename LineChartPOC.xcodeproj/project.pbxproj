@@ -161,13 +161,13 @@
 		1B92CEAB298DB4D000088D5B /* AZLineChartView */ = {
 			isa = PBXGroup;
 			children = (
-				1BB43B25299027FF000F99E6 /* Styles */,
 				1BB43B2B29902B08000F99E6 /* Data */,
+				1BB43B2E2990338E000F99E6 /* Formatters */,
+				1BB43B25299027FF000F99E6 /* Styles */,
 				1BB43B2A29902AF7000F99E6 /* Marker */,
 				1B92CEAC298DB50200088D5B /* AZLineChartView.swift */,
 				1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */,
 				1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */,
-				1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */,
 				1B92CEB4298E392000088D5B /* AZLineChartRenderer.swift */,
 			);
 			path = AZLineChartView;
@@ -214,6 +214,14 @@
 				1B92CEB6298E697400088D5B /* Array+Extensions.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		1BB43B2E2990338E000F99E6 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
