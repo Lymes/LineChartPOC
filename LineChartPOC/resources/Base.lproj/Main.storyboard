@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LineChartPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-b9-0P4" customClass="AZLineChartView" customModule="LineChartPOC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="119" width="393" height="499"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CcU-EE-kLj">
+                                <rect key="frame" x="24" y="658" width="345" height="54.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdx-k2-6rh">
+                                        <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="54.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Zoom Full"/>
+                                        <connections>
+                                            <action selector="zoomFull" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLz-wz-VLk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHw-MX-kCZ">
+                                        <rect key="frame" x="117.66666666666666" y="0.0" width="109.66666666666666" height="54.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Zoom to Markers"/>
+                                        <connections>
+                                            <action selector="zoomToMarkers" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4w-5e-bLt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-uq-XWw">
+                                        <rect key="frame" x="235.33333333333329" y="0.0" width="109.66666666666666" height="54.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Toggle Events"/>
+                                        <connections>
+                                            <action selector="toggleEvents" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxz-9T-YsN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="eBg-b9-0P4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="AQF-Ix-Jd3"/>
+                            <constraint firstItem="eBg-b9-0P4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MGi-mb-9hN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CcU-EE-kLj" secondAttribute="trailing" constant="24" id="bWZ-QO-iGh"/>
+                            <constraint firstItem="CcU-EE-kLj" firstAttribute="top" secondItem="eBg-b9-0P4" secondAttribute="bottom" constant="40" id="cYG-n4-oIB"/>
+                            <constraint firstItem="CcU-EE-kLj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="gKm-g0-9hD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eBg-b9-0P4" secondAttribute="bottom" constant="200" id="jaj-al-zo3"/>
+                            <constraint firstItem="eBg-b9-0P4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l8f-YL-vec"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="eBg-b9-0P4" id="lHa-Fu-zYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="18.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
