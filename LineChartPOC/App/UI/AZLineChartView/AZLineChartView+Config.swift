@@ -8,6 +8,8 @@
 import UIKit
 import Charts
 
+typealias DataSetDecorator = (LineChartDataSet, Int) -> LineChartDataSet
+
 extension AZLineChartView {
 
     func setupStyle() {

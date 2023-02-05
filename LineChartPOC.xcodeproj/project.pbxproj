@@ -162,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				1BB43B2B29902B08000F99E6 /* Data */,
-				1BB43B2E2990338E000F99E6 /* Formatters */,
 				1BB43B25299027FF000F99E6 /* Styles */,
+				1BB43B2E2990338E000F99E6 /* Formatters */,
 				1BB43B2A29902AF7000F99E6 /* Marker */,
 				1B92CEAC298DB50200088D5B /* AZLineChartView.swift */,
 				1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */,

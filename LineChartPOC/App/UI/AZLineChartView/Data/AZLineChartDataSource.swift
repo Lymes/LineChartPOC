@@ -9,8 +9,6 @@ import UIKit
 import Charts
 import Combine
 
-typealias DataSetDecorator = (LineChartDataSet, Int) -> LineChartDataSet
-
 final class AZLineChartDataSource {
     private static let maxVisiblePoints = 100
 
