@@ -56,7 +56,7 @@ extension AZLineChartView {
             if let newLeft = getHighlightByTouchPoint(CGPoint(x: left.drawX / scale, y: left.drawY)),
                let newRight = getHighlightByTouchPoint(CGPoint(x: right.drawX * scale, y: right.drawY)) {
                 print(newLeft.drawX, newRight.drawX)
-                //highlightValues([newLeft, newRight])
+                // highlightValues([newLeft, newRight])
             }
         }
         recognizer.scale = 1.0

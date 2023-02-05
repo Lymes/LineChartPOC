@@ -45,12 +45,7 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
     }
 
     func toggleEvents() {
-        var events = highlighted
-        if events.count > 0 {
-            events = []
-        } else {
-            events = datasource?.rawData.highlights ?? []
-        }
+        let events = highlighted.count > 0 ? [] : datasource?.rawData.highlights ?? []
         highlightValues(events)
     }
 
