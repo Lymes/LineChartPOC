@@ -26,7 +26,10 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
 
     var datasource: AZLineChartDataSource? {
         didSet {
-            datasource?.dataSetDecorator = decorateDataSet
+            datasource?.dataSetDecorator = { [weak self] dataSet, index in
+                self?.decorate(dataSet, index)
+                return dataSet
+            }
             setupObservers()
         }
     }

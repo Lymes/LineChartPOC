@@ -28,11 +28,13 @@ final class AZLineChartDataSource {
     func setRange(startDate: Date, endDate: Date) {
         let prepared = rawData
             .getRange(startDate: startDate, endDate: endDate)
-            .filterBy(maxVisible: Self.maxVisiblePoints, interpolator: LinearInterpolator())
+            .filter(by: Self.maxVisiblePoints, interpolator: LinearInterpolator())
         setData(prepared)
     }
 
-    func setData(_ data: [[DataPoint]]) {
+    // MARK: Private methods
+
+    private func setData(_ data: [[DataPoint]]) {
         let dataSets = data.createChartDatasets(decorator: dataSetDecorator)
         chartData = LineChartData(dataSets: dataSets)
     }

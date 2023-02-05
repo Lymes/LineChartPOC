@@ -81,7 +81,7 @@ extension Array where Element == [DataPoint] {
         map { $0.decimate(by: stride, interpolator: interpolator) }
     }
 
-    func filterBy(maxVisible: Int, interpolator: DataPointIntepolator) -> [[DataPoint]] {
+    func filter(by maxVisible: Int, interpolator: DataPointIntepolator) -> [[DataPoint]] {
         let stride = maxPoints / maxVisible
         return stride > 2 ? decimate(by: stride, interpolator: interpolator) : self
     }

@@ -18,7 +18,7 @@ extension AZLineChartView {
         setupXAxis()
     }
 
-    func decorateDataSet(_ dataSet: LineChartDataSet, _ index: Int) -> LineChartDataSet {
+    func decorate(_ dataSet: LineChartDataSet, _ index: Int) {
         dataSet.lineWidth = 1
         dataSet.colors = [style.dataColors[index]]
         dataSet.drawCircleHoleEnabled = false
@@ -27,7 +27,6 @@ extension AZLineChartView {
         dataSet.highlightLineWidth = 2
         dataSet.highlightColor = .red
         dataSet.drawHorizontalHighlightIndicatorEnabled = false
-        return dataSet
     }
 
     private func setupBehavior() {

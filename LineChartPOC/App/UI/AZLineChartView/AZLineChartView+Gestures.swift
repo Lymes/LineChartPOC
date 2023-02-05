@@ -48,8 +48,17 @@ extension AZLineChartView {
     }
 
     @objc func zoomHandler(_ recognizer: UIPinchGestureRecognizer) {
+        guard highlighted.count == 2,
+        let left = highlighted.leftHighlight,
+        let right = highlighted.rightHighlight else { return }
         if recognizer.state == NSUIGestureRecognizerState.changed {
-
+            let scale = recognizer.scale
+            if let newLeft = getHighlightByTouchPoint(CGPoint(x: left.drawX / scale, y: left.drawY)),
+               let newRight = getHighlightByTouchPoint(CGPoint(x: right.drawX * scale, y: right.drawY)) {
+                print(newLeft.drawX, newRight.drawX)
+                //highlightValues([newLeft, newRight])
+            }
         }
+        recognizer.scale = 1.0
     }
 }
