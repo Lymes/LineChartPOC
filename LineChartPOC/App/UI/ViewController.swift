@@ -24,6 +24,7 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        chartView.style = AZLineChartGenericStyle()
         chartView.datasource = datasource
         setupObservers()
         viewModel.loadData()

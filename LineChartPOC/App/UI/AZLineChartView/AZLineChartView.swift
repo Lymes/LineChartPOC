@@ -11,18 +11,19 @@ import Combine
 
 final class AZLineChartView: LineChartView, ChartViewDelegate {
 
-    let viewModel = AZLineChartViewModel()
     private var cancellable: AnyCancellable?
-
     override var highlighted: [Highlight] {
         super.highlighted
     }
 
     // MARK: Public API
 
+    var style: AZLineChartStyle = AZLineChartGenericStyle()
+
     var datasource: AZLineChartDataSource? {
         didSet {
             setupStyle()
+            datasource?.dataSetDecorator = decorateDataSet
             setupObservers()
         }
     }
@@ -67,21 +68,19 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
     }
 
     private func setupXAxis() {
-        xAxis.labelFont = .systemFont(ofSize: 11)
-        xAxis.labelTextColor = .black
+        xAxis.labelFont = style.xAxisLabelFont
+        xAxis.labelTextColor = style.xAxisLabelTextColor
         xAxis.drawAxisLineEnabled = false
-        xAxis.labelCount = 5
+        xAxis.labelCount = style.xAxisLabelCount
         xAxis.labelPosition = .bottom
         xAxis.drawLabelsEnabled = true
         xAxis.drawLimitLinesBehindDataEnabled = true
         xAxis.avoidFirstLastClippingEnabled = true
         xAxis.valueFormatter = AZLineChartXFormatter()
-
-        leftAxis.labelTextColor = UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)
+        leftAxis.labelTextColor = style.leftAxisLabelTextColor
         leftAxis.drawGridLinesEnabled = true
         leftAxis.granularityEnabled = true
-
-        rightAxis.labelTextColor = .red
+        rightAxis.labelTextColor = style.rightAxisLabelTextColor
         rightAxis.granularityEnabled = false
     }
 
@@ -103,5 +102,17 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
                 viewPortHandler: viewPort
             )
         }
+    }
+
+    private func decorateDataSet(_ dataSet: LineChartDataSet, _ index: Int) -> LineChartDataSet {
+        dataSet.lineWidth = 1
+        dataSet.colors = [style.dataColors[index]]
+        dataSet.drawCircleHoleEnabled = false
+        dataSet.drawCirclesEnabled = false
+        dataSet.drawValuesEnabled = true
+        dataSet.highlightLineWidth = 2
+        dataSet.highlightColor = .red
+        dataSet.drawHorizontalHighlightIndicatorEnabled = false
+        return dataSet
     }
 }

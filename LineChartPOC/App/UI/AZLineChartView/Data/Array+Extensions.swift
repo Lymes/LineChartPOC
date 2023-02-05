@@ -86,9 +86,10 @@ extension Array where Element == [DataPoint] {
         return stride > 2 ? decimate(by: stride, interpolator: interpolator) : self
     }
 
-    func createChartDatasets(decorator: DataSetDecorator ) -> [LineChartDataSet] {
+    func createChartDatasets(decorator: DataSetDecorator? ) -> [LineChartDataSet] {
         enumerated().map { index, element in
-            decorator(element.chartDataset, index)
+            guard let decorator = decorator else { return element.chartDataset }
+            return decorator(element.chartDataset, index)
         }
     }
 }

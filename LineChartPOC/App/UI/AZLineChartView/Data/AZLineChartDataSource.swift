@@ -13,16 +13,16 @@ typealias DataSetDecorator = (LineChartDataSet, Int) -> LineChartDataSet
 
 final class AZLineChartDataSource {
     private static let maxVisiblePoints = 100
-    private var colors: [UIColor] = []
 
     @Published
     var chartData: LineChartData = LineChartData()
 
     // MARK: Public API
 
+    var dataSetDecorator: DataSetDecorator?
+
     var rawData: [[DataPoint]] = [] {
         didSet {
-            generateRandomColors()
             setRange(startDate: rawData.minDate, endDate: rawData.maxDate)
         }
     }
@@ -35,28 +35,7 @@ final class AZLineChartDataSource {
     }
 
     func setData(_ data: [[DataPoint]]) {
-        let dataSets = data.createChartDatasets(decorator: decorateDataSet)
+        let dataSets = data.createChartDatasets(decorator: dataSetDecorator)
         chartData = LineChartData(dataSets: dataSets)
-    }
-
-    // MARK: Private methods
-
-    private func decorateDataSet(_ dataSet: LineChartDataSet, _ index: Int) -> LineChartDataSet {
-        dataSet.lineWidth = 1
-        dataSet.colors = [colors[index]]
-        dataSet.drawCircleHoleEnabled = false
-        dataSet.drawCirclesEnabled = false
-        dataSet.drawValuesEnabled = true
-        dataSet.highlightLineWidth = 2
-        dataSet.highlightColor = .red
-        dataSet.drawHorizontalHighlightIndicatorEnabled = false
-        return dataSet
-    }
-
-    private func generateRandomColors() {
-        colors = []
-        for _ in 0...rawData.count {
-            colors.append(.random())
-        }
     }
 }
