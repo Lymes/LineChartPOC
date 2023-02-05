@@ -29,6 +29,7 @@
 		1BB43B24299020E3000F99E6 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */; };
 		1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */; };
 		1BB43B29299028D8000F99E6 /* AZLineChartGenericStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */; };
+		1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartStyle.swift; sourceTree = "<group>"; };
 		1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartGenericStyle.swift; sourceTree = "<group>"; };
+		1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Config.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				1BB43B2B29902B08000F99E6 /* Data */,
 				1BB43B2A29902AF7000F99E6 /* Marker */,
 				1B92CEAC298DB50200088D5B /* AZLineChartView.swift */,
+				1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */,
 				1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */,
 				1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */,
 				1B92CEB4298E392000088D5B /* AZLineChartRenderer.swift */,
@@ -349,6 +352,7 @@
 				1B92CEAD298DB50200088D5B /* AZLineChartView.swift in Sources */,
 				1BB43B21298FB5F6000F99E6 /* AZLineChartView+Gestures.swift in Sources */,
 				1B92CEB7298E697400088D5B /* Array+Extensions.swift in Sources */,
+				1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */,
 				1BB43B1D298FA085000F99E6 /* AZLineChartMarker.swift in Sources */,
 				1B92CEB5298E392000088D5B /* AZLineChartRenderer.swift in Sources */,
 				1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */,
