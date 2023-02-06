@@ -18,6 +18,9 @@ struct AZLineChartGenericStyle: AZLineChartStyle {
     let leftAxisLabelTextColor: UIColor = UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)
     let rightAxisLabelTextColor: UIColor = .red
 
+    let highlightLineWidth: CGFloat = 2.0
+    let highlightColor = UIColor(red: 0, green: 0.478, blue: 0.702, alpha: 1)
+
     var dataColors: [UIColor] = []
 
     init() {

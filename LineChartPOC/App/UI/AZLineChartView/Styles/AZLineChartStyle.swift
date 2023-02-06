@@ -17,5 +17,8 @@ protocol AZLineChartStyle {
     var leftAxisLabelTextColor: UIColor { get }
     var rightAxisLabelTextColor: UIColor { get }
 
+    var highlightLineWidth: CGFloat { get }
+    var highlightColor: UIColor { get }
+
     var dataColors: [UIColor] { get }
 }

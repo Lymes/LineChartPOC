@@ -30,6 +30,8 @@
 		1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */; };
 		1BB43B29299028D8000F99E6 /* AZLineChartGenericStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */; };
 		1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */; };
+		787115FD299136FA00A351B8 /* AZLineChartMarker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787115FC299136FA00A351B8 /* AZLineChartMarker.xib */; };
+		787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartStyle.swift; sourceTree = "<group>"; };
 		1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartGenericStyle.swift; sourceTree = "<group>"; };
 		1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Config.swift"; sourceTree = "<group>"; };
+		787115FC299136FA00A351B8 /* AZLineChartMarker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AZLineChartMarker.xib; sourceTree = "<group>"; };
+		787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartXAxisRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		1B92CE9E298DAF0500088D5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				787115F72990EDF900A351B8 /* Legend */,
 				1B92CEAB298DB4D000088D5B /* AZLineChartView */,
 				1B92CE8E298DAEE800088D5B /* ViewController.swift */,
 				1B92CEA6298DB08600088D5B /* ViewModel.swift */,
@@ -169,6 +174,7 @@
 				1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */,
 				1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */,
 				1B92CEB4298E392000088D5B /* AZLineChartRenderer.swift */,
+				787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */,
 			);
 			path = AZLineChartView;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB43B1C298FA085000F99E6 /* AZLineChartMarker.swift */,
+				787115FC299136FA00A351B8 /* AZLineChartMarker.xib */,
 			);
 			path = Marker;
 			sourceTree = "<group>";
@@ -222,6 +229,13 @@
 				1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */,
 			);
 			path = Formatters;
+			sourceTree = "<group>";
+		};
+		787115F72990EDF900A351B8 /* Legend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Legend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B92CEA5298DB06D00088D5B /* line_data_30.json in Resources */,
+				787115FD299136FA00A351B8 /* AZLineChartMarker.xib in Resources */,
 				1B92CE97298DAEEB00088D5B /* LaunchScreen.storyboard in Resources */,
 				1B92CE94298DAEEB00088D5B /* Assets.xcassets in Resources */,
 				1B92CE92298DAEE800088D5B /* Main.storyboard in Resources */,
@@ -357,6 +372,7 @@
 			files = (
 				1B92CEC6298E789B00088D5B /* DataPointInterpolator.swift in Sources */,
 				1BB43B24299020E3000F99E6 /* UIColor+Extensions.swift in Sources */,
+				787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */,
 				1B92CEAD298DB50200088D5B /* AZLineChartView.swift in Sources */,
 				1BB43B21298FB5F6000F99E6 /* AZLineChartView+Gestures.swift in Sources */,
 				1B92CEB7298E697400088D5B /* Array+Extensions.swift in Sources */,
@@ -463,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -517,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -7,47 +7,38 @@
 
 import UIKit
 import Charts
+import CoreGraphics
+import Foundation
 
 class AZLineChartMarker: MarkerView {
-    private var text = ""
+    @IBOutlet weak var label: UILabel!
+
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yy"
         return formatter
     }()
 
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     override func refreshContent(entry: ChartDataEntry, highlight: Highlight) {
         super.refreshContent(entry: entry, highlight: highlight)
         let date = Date(timeIntervalSince1970: entry.x)
-        text = String(dateFormatter.string(from: date))
+        let text = String(dateFormatter.string(from: date))
+        label.text = text
     }
 
     override func draw(context: CGContext, point: CGPoint) {
-        super.draw(context: context, point: point)
-
-        var drawAttributes = [NSAttributedString.Key: Any]()
-        drawAttributes[.font] = UIFont.systemFont(ofSize: 15)
-        drawAttributes[.foregroundColor] = UIColor.white
-        drawAttributes[.backgroundColor] = UIColor.darkGray
-
-        self.bounds.size = (" \(text) " as NSString).size(withAttributes: drawAttributes)
-        self.offset = CGPoint(x: 0, y: -self.bounds.size.height - 2)
-
         let offset = self.offsetForDrawing(atPoint: point)
 
-        drawText(text: " \(text) " as NSString,
-                 rect: CGRect(origin: CGPoint(x: point.x + offset.x, y: point.y + offset.y), size: self.bounds.size),
-                 withAttributes: drawAttributes)
-    }
-
-    func drawText(text: NSString, rect: CGRect, withAttributes attributes: [NSAttributedString.Key: Any]? = nil) {
-        let size = text.size(withAttributes: attributes)
-        let centeredRect = CGRect(
-            x: rect.origin.x - rect.size.width / 2.0,
-            y: 0,
-            width: size.width,
-            height: size.height
-        )
-        text.draw(in: centeredRect, withAttributes: attributes)
+        context.saveGState()
+        context.translateBy(x: point.x + offset.x - bounds.width / 2.0,
+                              y: 0)
+        UIGraphicsPushContext(context)
+        self.layer.render(in: context)
+        UIGraphicsPopContext()
+        context.restoreGState()
     }
 }

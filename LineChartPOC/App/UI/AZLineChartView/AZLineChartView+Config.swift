@@ -14,6 +14,7 @@ extension AZLineChartView {
 
     func setupStyle() {
         setupRenderer()
+        setupLegendRenderer()
         setupBehavior()
         setupXAxis()
     }
@@ -24,8 +25,8 @@ extension AZLineChartView {
         dataSet.drawCircleHoleEnabled = false
         dataSet.drawCirclesEnabled = false
         dataSet.drawValuesEnabled = true
-        dataSet.highlightLineWidth = 2
-        dataSet.highlightColor = .red
+        dataSet.highlightLineWidth = style.highlightLineWidth
+        dataSet.highlightColor = style.highlightColor
         dataSet.drawHorizontalHighlightIndicatorEnabled = false
     }
 
@@ -36,25 +37,35 @@ extension AZLineChartView {
         doubleTapToZoomEnabled = false
         highlightPerTapEnabled = false
         dragEnabled = false
-        marker = AZLineChartMarker()
+        marker = AZLineChartMarker.viewFromXib()
+        legend.enabled = false
         setupGestures()
     }
 
     private func setupXAxis() {
+        xAxisRenderer = AZLineChartXAxisRenderer(
+            viewPortHandler: viewPortHandler,
+            axis: xAxis,
+            transformer: getTransformer(forAxis: .left)
+        )
         xAxis.labelFont = style.xAxisLabelFont
         xAxis.labelTextColor = style.xAxisLabelTextColor
-        xAxis.drawAxisLineEnabled = false
+        xAxis.drawAxisLineEnabled = true
+        xAxis.drawGridLinesEnabled = true
         xAxis.labelCount = style.xAxisLabelCount
         xAxis.labelPosition = .bottom
         xAxis.drawLabelsEnabled = true
         xAxis.drawLimitLinesBehindDataEnabled = true
         xAxis.avoidFirstLastClippingEnabled = true
         xAxis.valueFormatter = AZLineChartXFormatter()
+
         leftAxis.labelTextColor = style.leftAxisLabelTextColor
         leftAxis.drawGridLinesEnabled = true
-        leftAxis.granularityEnabled = true
+        leftAxis.zeroLineColor = .red
+        // leftAxis.gridColor = .clear
+
         rightAxis.labelTextColor = style.rightAxisLabelTextColor
-        rightAxis.granularityEnabled = false
+        rightAxis.drawGridLinesEnabled = true
     }
 
     private func setupRenderer() {
@@ -67,5 +78,11 @@ extension AZLineChartView {
                 viewPortHandler: viewPort
             )
         }
+    }
+
+    private func setupLegendRenderer() {
+        legend.form = .square
+        legend.horizontalAlignment = .center
+        legend.orientation = .horizontal
     }
 }
