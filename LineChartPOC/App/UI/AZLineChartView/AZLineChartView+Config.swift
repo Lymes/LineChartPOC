@@ -48,6 +48,7 @@ extension AZLineChartView {
             axis: xAxis,
             transformer: getTransformer(forAxis: .left)
         )
+        // xAxis.labelRotationAngle = 45.0
         xAxis.labelFont = style.xAxisLabelFont
         xAxis.labelTextColor = style.xAxisLabelTextColor
         xAxis.drawAxisLineEnabled = true
@@ -55,17 +56,19 @@ extension AZLineChartView {
         xAxis.labelCount = style.xAxisLabelCount
         xAxis.labelPosition = .bottom
         xAxis.drawLabelsEnabled = true
-        xAxis.drawLimitLinesBehindDataEnabled = true
-        xAxis.avoidFirstLastClippingEnabled = true
+        xAxis.drawLimitLinesBehindDataEnabled = false
+        xAxis.avoidFirstLastClippingEnabled = false
         xAxis.valueFormatter = AZLineChartXFormatter()
 
         leftAxis.labelTextColor = style.leftAxisLabelTextColor
         leftAxis.drawGridLinesEnabled = true
-        leftAxis.zeroLineColor = .red
-        // leftAxis.gridColor = .clear
+        leftAxis.gridColor = .blue.withAlphaComponent(0.5)
+        leftAxis.gridLineWidth = 0.5
+        leftAxis.gridLineDashPhase = 0.5
+        leftAxis.gridLineDashLengths = [ 4, 4 ]
 
         rightAxis.labelTextColor = style.rightAxisLabelTextColor
-        rightAxis.drawGridLinesEnabled = true
+        rightAxis.drawGridLinesEnabled = false
     }
 
     private func setupRenderer() {
