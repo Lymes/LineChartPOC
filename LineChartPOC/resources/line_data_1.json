@@ -1,0 +1,4504 @@
+[
+  [
+    {
+      "date": 1673521224207,
+      "value": 196,
+      "isEvent": false
+    },
+    {
+      "date": 1673607624207,
+      "value": 196,
+      "isEvent": false
+    },
+    {
+      "date": 1673694024207,
+      "value": 197,
+      "isEvent": false
+    },
+    {
+      "date": 1673780424207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1673866824207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1673953224207,
+      "value": 190,
+      "isEvent": false
+    },
+    {
+      "date": 1674039624207,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1674126024207,
+      "value": 190,
+      "isEvent": false
+    },
+    {
+      "date": 1674212424207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1674298824207,
+      "value": 195,
+      "isEvent": false
+    },
+    {
+      "date": 1674385224207,
+      "value": 197,
+      "isEvent": false
+    },
+    {
+      "date": 1674471624207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1674558024207,
+      "value": 192,
+      "isEvent": false
+    },
+    {
+      "date": 1674644424207,
+      "value": 188,
+      "isEvent": false
+    },
+    {
+      "date": 1674730824207,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1674817224207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1674903624207,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1674990024207,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1675076424207,
+      "value": 187,
+      "isEvent": false
+    },
+    {
+      "date": 1675162824207,
+      "value": 182,
+      "isEvent": false
+    },
+    {
+      "date": 1675249224207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1675335624207,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1675422024207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1675508424207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1675594824207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1675681224207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1675767624207,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1675854024207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1675940424207,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1676026824207,
+      "value": 192,
+      "isEvent": false
+    },
+    {
+      "date": 1676113224207,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1676199624207,
+      "value": 192,
+      "isEvent": false
+    },
+    {
+      "date": 1676286024207,
+      "value": 190,
+      "isEvent": false
+    },
+    {
+      "date": 1676372424207,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1676458824207,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1676545224207,
+      "value": 192,
+      "isEvent": false
+    },
+    {
+      "date": 1676631624207,
+      "value": 196,
+      "isEvent": false
+    },
+    {
+      "date": 1676718024207,
+      "value": 196,
+      "isEvent": false
+    },
+    {
+      "date": 1676804424207,
+      "value": 201,
+      "isEvent": false
+    },
+    {
+      "date": 1676890824207,
+      "value": 200,
+      "isEvent": false
+    },
+    {
+      "date": 1676977224207,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1677063624207,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1677150024207,
+      "value": 208,
+      "isEvent": false
+    },
+    {
+      "date": 1677236424207,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1677322824207,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1677409224207,
+      "value": 201,
+      "isEvent": false
+    },
+    {
+      "date": 1677495624207,
+      "value": 198,
+      "isEvent": false
+    },
+    {
+      "date": 1677582024207,
+      "value": 202,
+      "isEvent": false
+    },
+    {
+      "date": 1677668424207,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1677754824207,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1677841224207,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1677927624207,
+      "value": 208,
+      "isEvent": false
+    },
+    {
+      "date": 1678014024207,
+      "value": 212,
+      "isEvent": false
+    },
+    {
+      "date": 1678100424207,
+      "value": 213,
+      "isEvent": false
+    },
+    {
+      "date": 1678186824207,
+      "value": 211,
+      "isEvent": false
+    },
+    {
+      "date": 1678273224207,
+      "value": 209,
+      "isEvent": false
+    },
+    {
+      "date": 1678359624207,
+      "value": 211,
+      "isEvent": false
+    },
+    {
+      "date": 1678446024207,
+      "value": 214,
+      "isEvent": false
+    },
+    {
+      "date": 1678532424207,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1678618824207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1678705224207,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1678791624207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1678878024207,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1678964424207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1679050824207,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1679137224207,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1679223624207,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1679310024207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1679396424207,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1679482824207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1679569224207,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1679655624207,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1679742024207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1679824824207,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1679911224207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1679997624207,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1680084024207,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1680170424207,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1680256824207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1680343224207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1680429624207,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1680516024207,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1680602424207,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1680688824207,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1680775224207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1680861624207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1680948024207,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1681034424207,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1681120824207,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1681207224207,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1681293624207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1681380024207,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1681466424207,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1681552824207,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1681639224207,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1681725624207,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1681812024207,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1681898424207,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1681984824207,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1682071224207,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1682157624207,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1682244024207,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1682330424207,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1682416824207,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1682503224207,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1682589624207,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1682676024207,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1682762424207,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1682848824207,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1682935224207,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1683021624207,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1683108024207,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1683194424207,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1683280824207,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1683367224207,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1683453624207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1683540024207,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1683626424207,
+      "value": 217,
+      "isEvent": false
+    },
+    {
+      "date": 1683712824207,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1683799224207,
+      "value": 216,
+      "isEvent": false
+    },
+    {
+      "date": 1683885624207,
+      "value": 216,
+      "isEvent": false
+    },
+    {
+      "date": 1683972024207,
+      "value": 216,
+      "isEvent": false
+    },
+    {
+      "date": 1684058424207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1684144824207,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1684231224207,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1684317624207,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1684404024207,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1684490424207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1684576824207,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1684663224207,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1684749624207,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1684836024207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1684922424207,
+      "value": 216,
+      "isEvent": false
+    },
+    {
+      "date": 1685008824207,
+      "value": 211,
+      "isEvent": false
+    },
+    {
+      "date": 1685095224207,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1685181624207,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1685268024207,
+      "value": 213,
+      "isEvent": false
+    },
+    {
+      "date": 1685354424207,
+      "value": 212,
+      "isEvent": false
+    },
+    {
+      "date": 1685440824207,
+      "value": 211,
+      "isEvent": false
+    },
+    {
+      "date": 1685527224207,
+      "value": 212,
+      "isEvent": false
+    },
+    {
+      "date": 1685613624207,
+      "value": 217,
+      "isEvent": false
+    },
+    {
+      "date": 1685700024207,
+      "value": 216,
+      "isEvent": false
+    },
+    {
+      "date": 1685786424207,
+      "value": 217,
+      "isEvent": false
+    },
+    {
+      "date": 1685872824207,
+      "value": 213,
+      "isEvent": false
+    },
+    {
+      "date": 1685959224207,
+      "value": 208,
+      "isEvent": false
+    },
+    {
+      "date": 1686045624207,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1686132024207,
+      "value": 204,
+      "isEvent": false
+    },
+    {
+      "date": 1686218424207,
+      "value": 201,
+      "isEvent": false
+    },
+    {
+      "date": 1686304824207,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1686391224207,
+      "value": 211,
+      "isEvent": false
+    },
+    {
+      "date": 1686477624207,
+      "value": 212,
+      "isEvent": false
+    },
+    {
+      "date": 1686564024207,
+      "value": 208,
+      "isEvent": false
+    },
+    {
+      "date": 1686650424207,
+      "value": 212,
+      "isEvent": false
+    },
+    {
+      "date": 1686736824207,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1686823224207,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1686909624207,
+      "value": 214,
+      "isEvent": false
+    },
+    {
+      "date": 1686996024207,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1687082424207,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1687168824207,
+      "value": 216,
+      "isEvent": false
+    },
+    {
+      "date": 1687255224207,
+      "value": 213,
+      "isEvent": false
+    },
+    {
+      "date": 1687341624207,
+      "value": 212,
+      "isEvent": false
+    },
+    {
+      "date": 1687428024207,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1687514424207,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1687600824207,
+      "value": 209,
+      "isEvent": false
+    },
+    {
+      "date": 1687687224207,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1687773624207,
+      "value": 207,
+      "isEvent": false
+    },
+    {
+      "date": 1687860024207,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1687946424207,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1688032824207,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1688119224207,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1688205624207,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1688292024207,
+      "value": 207,
+      "isEvent": false
+    },
+    {
+      "date": 1688378424207,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1688464824207,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1688551224207,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1688637624207,
+      "value": 207,
+      "isEvent": false
+    },
+    {
+      "date": 1688724024207,
+      "value": 202,
+      "isEvent": false
+    },
+    {
+      "date": 1688810424207,
+      "value": 199,
+      "isEvent": false
+    },
+    {
+      "date": 1688896824207,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1688983224207,
+      "value": 199,
+      "isEvent": false
+    },
+    {
+      "date": 1689069624207,
+      "value": 196,
+      "isEvent": false
+    },
+    {
+      "date": 1689156024207,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1689242424207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1689328824207,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1689415224207,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1689501624207,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1689588024207,
+      "value": 190,
+      "isEvent": false
+    },
+    {
+      "date": 1689674424207,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1689760824207,
+      "value": 188,
+      "isEvent": false
+    },
+    {
+      "date": 1689847224207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1689933624207,
+      "value": 187,
+      "isEvent": false
+    },
+    {
+      "date": 1690020024207,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1690106424207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1690192824207,
+      "value": 188,
+      "isEvent": false
+    },
+    {
+      "date": 1690279224207,
+      "value": 188,
+      "isEvent": false
+    },
+    {
+      "date": 1690365624207,
+      "value": 186,
+      "isEvent": false
+    },
+    {
+      "date": 1690452024207,
+      "value": 187,
+      "isEvent": false
+    },
+    {
+      "date": 1690538424207,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1690624824207,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1690711224207,
+      "value": 182,
+      "isEvent": false
+    },
+    {
+      "date": 1690797624207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1690884024207,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1690970424207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1691056824207,
+      "value": 175,
+      "isEvent": false
+    },
+    {
+      "date": 1691143224207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1691229624207,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1691316024207,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1691402424207,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1691488824207,
+      "value": 176,
+      "isEvent": false
+    },
+    {
+      "date": 1691575224207,
+      "value": 172,
+      "isEvent": false
+    },
+    {
+      "date": 1691661624207,
+      "value": 167,
+      "isEvent": false
+    },
+    {
+      "date": 1691748024207,
+      "value": 164,
+      "isEvent": false
+    },
+    {
+      "date": 1691834424207,
+      "value": 162,
+      "isEvent": false
+    },
+    {
+      "date": 1691920824207,
+      "value": 165,
+      "isEvent": false
+    },
+    {
+      "date": 1692007224207,
+      "value": 169,
+      "isEvent": false
+    },
+    {
+      "date": 1692093624207,
+      "value": 167,
+      "isEvent": false
+    },
+    {
+      "date": 1692180024207,
+      "value": 172,
+      "isEvent": false
+    },
+    {
+      "date": 1692266424207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1692352824207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1692439224207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1692525624207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1692612024207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1692698424207,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1692784824207,
+      "value": 188,
+      "isEvent": false
+    },
+    {
+      "date": 1692871224207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1692957624207,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1693044024207,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1693130424207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1693216824207,
+      "value": 175,
+      "isEvent": false
+    },
+    {
+      "date": 1693303224207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1693389624207,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1693476024207,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1693562424207,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1693648824207,
+      "value": 176,
+      "isEvent": false
+    },
+    {
+      "date": 1693735224207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1693821624207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1693908024207,
+      "value": 184,
+      "isEvent": false
+    },
+    {
+      "date": 1693994424207,
+      "value": 187,
+      "isEvent": false
+    },
+    {
+      "date": 1694080824207,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1694167224207,
+      "value": 187,
+      "isEvent": false
+    },
+    {
+      "date": 1694253624207,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1694340024207,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1694426424207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1694512824207,
+      "value": 182,
+      "isEvent": false
+    },
+    {
+      "date": 1694599224207,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1694685624207,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1694772024207,
+      "value": 182,
+      "isEvent": false
+    },
+    {
+      "date": 1694858424207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1694944824207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1695031224207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1695117624207,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1695204024207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1695290424207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1695376824207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1695463224207,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1695549624207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1695636024207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1695722424207,
+      "value": 171,
+      "isEvent": false
+    },
+    {
+      "date": 1695808824207,
+      "value": 169,
+      "isEvent": false
+    },
+    {
+      "date": 1695895224207,
+      "value": 171,
+      "isEvent": false
+    },
+    {
+      "date": 1695981624207,
+      "value": 170,
+      "isEvent": false
+    },
+    {
+      "date": 1696068024207,
+      "value": 167,
+      "isEvent": false
+    },
+    {
+      "date": 1696154424207,
+      "value": 165,
+      "isEvent": false
+    },
+    {
+      "date": 1696240824207,
+      "value": 166,
+      "isEvent": false
+    },
+    {
+      "date": 1696327224207,
+      "value": 171,
+      "isEvent": false
+    },
+    {
+      "date": 1696413624207,
+      "value": 170,
+      "isEvent": false
+    },
+    {
+      "date": 1696500024207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1696586424207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1696672824207,
+      "value": 171,
+      "isEvent": false
+    },
+    {
+      "date": 1696759224207,
+      "value": 171,
+      "isEvent": false
+    },
+    {
+      "date": 1696845624207,
+      "value": 172,
+      "isEvent": false
+    },
+    {
+      "date": 1696932024207,
+      "value": 170,
+      "isEvent": false
+    },
+    {
+      "date": 1697018424207,
+      "value": 168,
+      "isEvent": false
+    },
+    {
+      "date": 1697104824207,
+      "value": 171,
+      "isEvent": false
+    },
+    {
+      "date": 1697191224207,
+      "value": 170,
+      "isEvent": false
+    },
+    {
+      "date": 1697277624207,
+      "value": 173,
+      "isEvent": false
+    },
+    {
+      "date": 1697364024207,
+      "value": 173,
+      "isEvent": false
+    },
+    {
+      "date": 1697450424207,
+      "value": 175,
+      "isEvent": false
+    },
+    {
+      "date": 1697536824207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1697623224207,
+      "value": 170,
+      "isEvent": false
+    },
+    {
+      "date": 1697709624207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1697796024207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1697882424207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1697968824207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1698055224207,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1698141624207,
+      "value": 176,
+      "isEvent": false
+    },
+    {
+      "date": 1698228024207,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1698314424207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1698400824207,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1698487224207,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1698577224208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1698663624208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1698750024208,
+      "value": 182,
+      "isEvent": false
+    },
+    {
+      "date": 1698836424208,
+      "value": 181,
+      "isEvent": false
+    },
+    {
+      "date": 1698922824208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1699009224208,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1699095624208,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1699182024208,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1699268424208,
+      "value": 173,
+      "isEvent": false
+    },
+    {
+      "date": 1699354824208,
+      "value": 169,
+      "isEvent": false
+    },
+    {
+      "date": 1699441224208,
+      "value": 164,
+      "isEvent": false
+    },
+    {
+      "date": 1699527624208,
+      "value": 168,
+      "isEvent": false
+    },
+    {
+      "date": 1699614024208,
+      "value": 166,
+      "isEvent": false
+    },
+    {
+      "date": 1699700424208,
+      "value": 170,
+      "isEvent": false
+    },
+    {
+      "date": 1699786824208,
+      "value": 172,
+      "isEvent": false
+    },
+    {
+      "date": 1699873224208,
+      "value": 175,
+      "isEvent": false
+    },
+    {
+      "date": 1699959624208,
+      "value": 176,
+      "isEvent": false
+    },
+    {
+      "date": 1700046024208,
+      "value": 176,
+      "isEvent": false
+    },
+    {
+      "date": 1700132424208,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1700218824208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1700305224208,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1700391624208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1700478024208,
+      "value": 185,
+      "isEvent": false
+    },
+    {
+      "date": 1700564424208,
+      "value": 180,
+      "isEvent": false
+    },
+    {
+      "date": 1700650824208,
+      "value": 179,
+      "isEvent": false
+    },
+    {
+      "date": 1700737224208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1700823624208,
+      "value": 182,
+      "isEvent": false
+    },
+    {
+      "date": 1700910024208,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1700996424208,
+      "value": 174,
+      "isEvent": false
+    },
+    {
+      "date": 1701082824208,
+      "value": 177,
+      "isEvent": false
+    },
+    {
+      "date": 1701169224208,
+      "value": 178,
+      "isEvent": false
+    },
+    {
+      "date": 1701255624208,
+      "value": 183,
+      "isEvent": false
+    },
+    {
+      "date": 1701342024208,
+      "value": 188,
+      "isEvent": false
+    },
+    {
+      "date": 1701428424208,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1701514824208,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1701601224208,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1701687624208,
+      "value": 190,
+      "isEvent": false
+    },
+    {
+      "date": 1701774024208,
+      "value": 187,
+      "isEvent": false
+    },
+    {
+      "date": 1701860424208,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1701946824208,
+      "value": 192,
+      "isEvent": false
+    },
+    {
+      "date": 1702033224208,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1702119624208,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1702206024208,
+      "value": 189,
+      "isEvent": false
+    },
+    {
+      "date": 1702292424208,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1702378824208,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1702465224208,
+      "value": 191,
+      "isEvent": false
+    },
+    {
+      "date": 1702551624208,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1702638024208,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1702724424208,
+      "value": 195,
+      "isEvent": false
+    },
+    {
+      "date": 1702810824208,
+      "value": 194,
+      "isEvent": false
+    },
+    {
+      "date": 1702897224208,
+      "value": 193,
+      "isEvent": false
+    },
+    {
+      "date": 1702983624208,
+      "value": 195,
+      "isEvent": false
+    },
+    {
+      "date": 1703070024208,
+      "value": 196,
+      "isEvent": false
+    },
+    {
+      "date": 1703156424208,
+      "value": 195,
+      "isEvent": false
+    },
+    {
+      "date": 1703242824208,
+      "value": 199,
+      "isEvent": false
+    },
+    {
+      "date": 1703329224208,
+      "value": 198,
+      "isEvent": false
+    },
+    {
+      "date": 1703415624208,
+      "value": 198,
+      "isEvent": false
+    },
+    {
+      "date": 1703502024208,
+      "value": 201,
+      "isEvent": false
+    },
+    {
+      "date": 1703588424208,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1703674824208,
+      "value": 205,
+      "isEvent": false
+    },
+    {
+      "date": 1703761224208,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1703847624208,
+      "value": 204,
+      "isEvent": false
+    },
+    {
+      "date": 1703934024208,
+      "value": 201,
+      "isEvent": false
+    },
+    {
+      "date": 1704020424208,
+      "value": 203,
+      "isEvent": false
+    },
+    {
+      "date": 1704106824208,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1704193224208,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1704279624208,
+      "value": 207,
+      "isEvent": false
+    },
+    {
+      "date": 1704366024208,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1704452424208,
+      "value": 209,
+      "isEvent": false
+    },
+    {
+      "date": 1704538824208,
+      "value": 206,
+      "isEvent": false
+    },
+    {
+      "date": 1704625224208,
+      "value": 208,
+      "isEvent": false
+    },
+    {
+      "date": 1704711624208,
+      "value": 213,
+      "isEvent": false
+    },
+    {
+      "date": 1704798024208,
+      "value": 208,
+      "isEvent": false
+    },
+    {
+      "date": 1704884424208,
+      "value": 210,
+      "isEvent": false
+    },
+    {
+      "date": 1704970824208,
+      "value": 209,
+      "isEvent": false
+    },
+    {
+      "date": 1705057224208,
+      "value": 211,
+      "isEvent": false
+    },
+    {
+      "date": 1705143624208,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1705230024208,
+      "value": 215,
+      "isEvent": false
+    },
+    {
+      "date": 1705316424208,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1705402824208,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1705489224208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1705575624208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1705662024208,
+      "value": 217,
+      "isEvent": false
+    },
+    {
+      "date": 1705748424208,
+      "value": 214,
+      "isEvent": false
+    },
+    {
+      "date": 1705834824208,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1705921224208,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1706007624208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1706094024208,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1706180424208,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1706266824208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1706353224208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1706439624208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1706526024208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1706612424208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1706698824208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1706785224208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1706871624208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1706958024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1707044424208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1707130824208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1707217224208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1707303624208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1707390024208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1707476424208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1707562824208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1707649224208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1707735624208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1707822024208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1707908424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1707994824208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1708081224208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1708167624208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1708254024208,
+      "value": 247,
+      "isEvent": false
+    },
+    {
+      "date": 1708340424208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1708426824208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1708513224208,
+      "value": 252,
+      "isEvent": false
+    },
+    {
+      "date": 1708599624208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1708686024208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1708772424208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1708858824208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1708945224208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1709031624208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1709118024208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1709204424208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1709290824208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1709377224208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1709463624208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1709550024208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1709636424208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1709722824208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1709809224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1709895624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1709982024208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1710068424208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1710154824208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1710241224208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1710327624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1710414024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1710500424208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1710586824208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1710673224208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1710759624208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1710846024208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1710932424208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1711018824208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1711105224208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1711191624208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1711278024208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1711364424208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1711450824208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1711537224208,
+      "value": 247,
+      "isEvent": false
+    },
+    {
+      "date": 1711623624208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1711710024208,
+      "value": 252,
+      "isEvent": false
+    },
+    {
+      "date": 1711796424208,
+      "value": 252,
+      "isEvent": false
+    },
+    {
+      "date": 1711879224208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1711965624208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1712052024208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1712138424208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1712224824208,
+      "value": 255,
+      "isEvent": false
+    },
+    {
+      "date": 1712311224208,
+      "value": 255,
+      "isEvent": false
+    },
+    {
+      "date": 1712397624208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1712484024208,
+      "value": 258,
+      "isEvent": false
+    },
+    {
+      "date": 1712570424208,
+      "value": 262,
+      "isEvent": false
+    },
+    {
+      "date": 1712656824208,
+      "value": 266,
+      "isEvent": false
+    },
+    {
+      "date": 1712743224208,
+      "value": 270,
+      "isEvent": false
+    },
+    {
+      "date": 1712829624208,
+      "value": 268,
+      "isEvent": false
+    },
+    {
+      "date": 1712916024208,
+      "value": 269,
+      "isEvent": false
+    },
+    {
+      "date": 1713002424208,
+      "value": 267,
+      "isEvent": false
+    },
+    {
+      "date": 1713088824208,
+      "value": 265,
+      "isEvent": false
+    },
+    {
+      "date": 1713175224208,
+      "value": 264,
+      "isEvent": false
+    },
+    {
+      "date": 1713261624208,
+      "value": 265,
+      "isEvent": false
+    },
+    {
+      "date": 1713348024208,
+      "value": 269,
+      "isEvent": false
+    },
+    {
+      "date": 1713434424208,
+      "value": 264,
+      "isEvent": false
+    },
+    {
+      "date": 1713520824208,
+      "value": 267,
+      "isEvent": false
+    },
+    {
+      "date": 1713607224208,
+      "value": 262,
+      "isEvent": false
+    },
+    {
+      "date": 1713693624208,
+      "value": 257,
+      "isEvent": false
+    },
+    {
+      "date": 1713780024208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1713866424208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1713952824208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1714039224208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1714125624208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1714212024208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1714298424208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1714384824208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1714471224208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1714557624208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1714644024208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1714730424208,
+      "value": 252,
+      "isEvent": false
+    },
+    {
+      "date": 1714816824208,
+      "value": 256,
+      "isEvent": false
+    },
+    {
+      "date": 1714903224208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1714989624208,
+      "value": 249,
+      "isEvent": false
+    },
+    {
+      "date": 1715076024208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1715162424208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1715248824208,
+      "value": 255,
+      "isEvent": false
+    },
+    {
+      "date": 1715335224208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1715421624208,
+      "value": 258,
+      "isEvent": false
+    },
+    {
+      "date": 1715508024208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1715594424208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1715680824208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1715767224208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1715853624208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1715940024208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1716026424208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1716112824208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1716199224208,
+      "value": 249,
+      "isEvent": false
+    },
+    {
+      "date": 1716285624208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1716372024208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1716458424208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1716544824208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1716631224208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1716717624208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1716804024208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1716890424208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1716976824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1717063224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1717149624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1717236024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1717322424208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1717408824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1717495224208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1717581624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1717668024208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1717754424208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1717840824208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1717927224208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1718013624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1718100024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1718186424208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1718272824208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1718359224208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1718445624208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1718532024208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1718618424208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1718704824208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1718791224208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1718877624208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1718964024208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1719050424208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1719136824208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1719223224208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1719309624208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1719396024208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1719482424208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1719568824208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1719655224208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1719741624208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1719828024208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1719914424208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1720000824208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1720087224208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1720173624208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1720260024208,
+      "value": 217,
+      "isEvent": false
+    },
+    {
+      "date": 1720346424208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1720432824208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1720519224208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1720605624208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1720692024208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1720778424208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1720864824208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1720951224208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1721037624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1721124024208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1721210424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1721296824208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1721383224208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1721469624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1721556024208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1721642424208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1721728824208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1721815224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1721901624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1721988024208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1722074424208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1722160824208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1722247224208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1722333624208,
+      "value": 218,
+      "isEvent": false
+    },
+    {
+      "date": 1722420024208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1722506424208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1722592824208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1722679224208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1722765624208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1722852024208,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1722938424208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1723024824208,
+      "value": 220,
+      "isEvent": false
+    },
+    {
+      "date": 1723111224208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1723197624208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1723284024208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1723370424208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1723456824208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1723543224208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1723629624208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1723716024208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1723802424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1723888824208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1723975224208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1724061624208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1724148024208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1724234424208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1724320824208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1724407224208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1724493624208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1724580024208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1724666424208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1724752824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1724839224208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1724925624208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1725012024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1725098424208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1725184824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1725271224208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1725357624208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1725444024208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1725530424208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1725616824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1725703224208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1725789624208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1725876024208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1725962424208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1726048824208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1726135224208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1726221624208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1726308024208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1726394424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1726480824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1726567224208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1726653624208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1726740024208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1726826424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1726912824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1726999224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1727085624208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1727172024208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1727258424208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1727344824208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1727431224208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1727517624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1727604024208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1727690424208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1727776824208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1727863224208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1727949624208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1728036024208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1728122424208,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1728208824208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1728295224208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1728381624208,
+      "value": 221,
+      "isEvent": false
+    },
+    {
+      "date": 1728468024208,
+      "value": 219,
+      "isEvent": false
+    },
+    {
+      "date": 1728554424208,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1728640824208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1728727224208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1728813624208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1728900024208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1728986424208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1729072824208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1729159224208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1729245624208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1729332024208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1729418424208,
+      "value": 223,
+      "isEvent": false
+    },
+    {
+      "date": 1729504824208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1729591224208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1729677624208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1729764024208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1729850424208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1729936824208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1730026824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1730113224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1730199624208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1730286024208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1730372424208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1730458824208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1730545224208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1730631624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1730718024208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1730804424208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1730890824208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1730977224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1731063624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1731150024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1731236424208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1731322824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1731409224208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1731495624208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1731582024208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1731668424208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1731754824208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1731841224208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1731927624208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1732014024208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1732100424208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1732186824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1732273224208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1732359624208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1732446024208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1732532424208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1732618824208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1732705224208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1732791624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1732878024208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1732964424208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1733050824208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1733137224208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1733223624208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1733310024208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1733396424208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1733482824208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1733569224208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1733655624208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1733742024208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1733828424208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1733914824208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1734001224208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1734087624208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1734174024208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1734260424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1734346824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1734433224208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1734519624208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1734606024208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1734692424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1734778824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1734865224208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1734951624208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1735038024208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1735124424208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1735210824208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1735297224208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1735383624208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1735470024208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1735556424208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1735642824208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1735729224208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1735815624208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1735902024208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1735988424208,
+      "value": 253,
+      "isEvent": false
+    },
+    {
+      "date": 1736074824208,
+      "value": 249,
+      "isEvent": false
+    },
+    {
+      "date": 1736161224208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1736247624208,
+      "value": 258,
+      "isEvent": false
+    },
+    {
+      "date": 1736334024208,
+      "value": 254,
+      "isEvent": false
+    },
+    {
+      "date": 1736420424208,
+      "value": 252,
+      "isEvent": false
+    },
+    {
+      "date": 1736506824208,
+      "value": 247,
+      "isEvent": false
+    },
+    {
+      "date": 1736593224208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1736679624208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1736766024208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1736852424208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1736938824208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1737025224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1737111624208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1737198024208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1737284424208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1737370824208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1737457224208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1737543624208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1737630024208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1737716424208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1737802824208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1737889224208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1737975624208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1738062024208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1738148424208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1738234824208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1738321224208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1738407624208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1738494024208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1738580424208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1738666824208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1738753224208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1738839624208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1738926024208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1739012424208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1739098824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1739185224208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1739271624208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1739358024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1739444424208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1739530824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1739617224208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1739703624208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1739790024208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1739876424208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1739962824208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1740049224208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1740135624208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1740222024208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1740308424208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1740394824208,
+      "value": 248,
+      "isEvent": false
+    },
+    {
+      "date": 1740481224208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1740567624208,
+      "value": 249,
+      "isEvent": false
+    },
+    {
+      "date": 1740654024208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1740740424208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1740826824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1740913224208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1740999624208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1741086024208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1741172424208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1741258824208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1741345224208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1741431624208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1741518024208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1741604424208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1741690824208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1741777224208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1741863624208,
+      "value": 230,
+      "isEvent": false
+    },
+    {
+      "date": 1741950024208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1742036424208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1742122824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1742209224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1742295624208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1742382024208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1742468424208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1742554824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1742641224208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1742727624208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1742814024208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1742900424208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1742986824208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1743073224208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1743159624208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1743246024208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1743328824208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1743415224208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1743501624208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1743588024208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1743674424208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1743760824208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1743847224208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1743933624208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1744020024208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1744106424208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1744192824208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1744279224208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1744365624208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1744452024208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1744538424208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1744624824208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1744711224208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1744797624208,
+      "value": 251,
+      "isEvent": false
+    },
+    {
+      "date": 1744884024208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1744970424208,
+      "value": 250,
+      "isEvent": false
+    },
+    {
+      "date": 1745056824208,
+      "value": 249,
+      "isEvent": false
+    },
+    {
+      "date": 1745143224208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1745229624208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1745316024208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1745402424208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1745488824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1745575224208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1745661624208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1745748024208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1745834424208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1745920824208,
+      "value": 243,
+      "isEvent": false
+    },
+    {
+      "date": 1746007224208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1746093624208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1746180024208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1746266424208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1746352824208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1746439224208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1746525624208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1746612024208,
+      "value": 239,
+      "isEvent": false
+    },
+    {
+      "date": 1746698424208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1746784824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1746871224208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1746957624208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1747044024208,
+      "value": 222,
+      "isEvent": false
+    },
+    {
+      "date": 1747130424208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1747216824208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1747303224208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1747389624208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1747476024208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1747562424208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1747648824208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1747735224208,
+      "value": 228,
+      "isEvent": false
+    },
+    {
+      "date": 1747821624208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1747908024208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1747994424208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1748080824208,
+      "value": 224,
+      "isEvent": false
+    },
+    {
+      "date": 1748167224208,
+      "value": 225,
+      "isEvent": false
+    },
+    {
+      "date": 1748253624208,
+      "value": 226,
+      "isEvent": false
+    },
+    {
+      "date": 1748340024208,
+      "value": 229,
+      "isEvent": false
+    },
+    {
+      "date": 1748426424208,
+      "value": 227,
+      "isEvent": false
+    },
+    {
+      "date": 1748512824208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1748599224208,
+      "value": 231,
+      "isEvent": false
+    },
+    {
+      "date": 1748685624208,
+      "value": 232,
+      "isEvent": false
+    },
+    {
+      "date": 1748772024208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1748858424208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1748944824208,
+      "value": 238,
+      "isEvent": false
+    },
+    {
+      "date": 1749031224208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1749117624208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1749204024208,
+      "value": 234,
+      "isEvent": false
+    },
+    {
+      "date": 1749290424208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1749376824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1749463224208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1749549624208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1749636024208,
+      "value": 244,
+      "isEvent": false
+    },
+    {
+      "date": 1749722424208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1749808824208,
+      "value": 245,
+      "isEvent": false
+    },
+    {
+      "date": 1749895224208,
+      "value": 246,
+      "isEvent": false
+    },
+    {
+      "date": 1749981624208,
+      "value": 242,
+      "isEvent": false
+    },
+    {
+      "date": 1750068024208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1750154424208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1750240824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1750327224208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1750413624208,
+      "value": 241,
+      "isEvent": false
+    },
+    {
+      "date": 1750500024208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1750586424208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1750672824208,
+      "value": 235,
+      "isEvent": false
+    },
+    {
+      "date": 1750759224208,
+      "value": 233,
+      "isEvent": false
+    },
+    {
+      "date": 1750845624208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1750932024208,
+      "value": 236,
+      "isEvent": false
+    },
+    {
+      "date": 1751018424208,
+      "value": 240,
+      "isEvent": false
+    },
+    {
+      "date": 1751104824208,
+      "value": 237,
+      "isEvent": false
+    },
+    {
+      "date": 1751191224208,
+      "value": 242,
+      "isEvent": false
+    }
+  ]
+]

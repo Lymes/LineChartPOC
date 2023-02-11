@@ -20,5 +20,7 @@ protocol AZLineChartStyle {
     var highlightLineWidth: CGFloat { get }
     var highlightColor: UIColor { get }
 
+    var veilColor: UIColor { get }
+
     var dataColors: [UIColor] { get }
 }

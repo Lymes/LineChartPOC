@@ -94,19 +94,19 @@ extension Array where Element == [DataPoint] {
     }
 }
 
-extension Array where Element == Highlight {
+extension Array where Element == AZLineChartMarker {
 
-    var leftHighlight: Highlight? {
-        self.min { highlight1, highlight2 in highlight1.x < highlight2.x }
+    var left: AZLineChartMarker? {
+        self.min { marker1, marker2 in marker1.value.x < marker2.value.x }
     }
 
-    var rightHighlight: Highlight? {
-        self.max { highlight1, highlight2 in highlight1.x < highlight2.x }
+    var right: AZLineChartMarker? {
+        self.max { marker1, marker2 in marker1.value.x < marker2.value.x }
     }
 
-    func closest(to highlight: Highlight) -> Highlight? {
-        self.min { highlight1, highlight2 in
-            abs(highlight1.x - highlight.x) < abs(highlight2.x - highlight.x)
+    func closest(to value: CGPoint) -> AZLineChartMarker? {
+        self.min { marker1, marker2 in
+            abs(marker1.value.x - value.x) < abs(marker2.value.x - value.x)
         }
     }
 }

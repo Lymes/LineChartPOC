@@ -10,12 +10,20 @@ import Charts
 import Combine
 
 final class AZLineChartDataSource {
-    private static let maxVisiblePoints = 100
+    private static let maxVisiblePoints = 100000
+    private static let minRangeSeconds: Double = 72 * 3600
+
+    // MARK: Public API
 
     @Published
     var chartData: LineChartData = LineChartData()
 
-    // MARK: Public API
+    var rangedData: [[DataPoint]] = [] {
+        didSet {
+            let dataSets = rangedData.createChartDatasets(decorator: dataSetDecorator)
+            chartData = LineChartData(dataSets: dataSets)
+        }
+    }
 
     var dataSetDecorator: DataSetDecorator?
 
@@ -26,16 +34,10 @@ final class AZLineChartDataSource {
     }
 
     func setRange(startDate: Date, endDate: Date) {
-        let prepared = rawData
+        guard (endDate.timeIntervalSince1970 -
+               startDate.timeIntervalSince1970) > Self.minRangeSeconds else { return }
+        rangedData = rawData
             .getRange(startDate: startDate, endDate: endDate)
             .filter(by: Self.maxVisiblePoints, interpolator: LinearInterpolator())
-        setData(prepared)
-    }
-
-    // MARK: Private methods
-
-    private func setData(_ data: [[DataPoint]]) {
-        let dataSets = data.createChartDatasets(decorator: dataSetDecorator)
-        chartData = LineChartData(dataSets: dataSets)
     }
 }

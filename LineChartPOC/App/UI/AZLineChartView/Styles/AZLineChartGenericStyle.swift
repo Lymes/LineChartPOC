@@ -18,12 +18,15 @@ struct AZLineChartGenericStyle: AZLineChartStyle {
     let leftAxisLabelTextColor: UIColor = UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)
     let rightAxisLabelTextColor: UIColor = .red
 
-    let highlightLineWidth: CGFloat = 2.0
-    let highlightColor = UIColor(red: 0, green: 0.478, blue: 0.702, alpha: 1)
+    let highlightLineWidth: CGFloat = 4.0
+    let highlightColor = UIColor(red: 0, green: 0.478, blue: 0.702, alpha: 0.6)
+
+    let veilColor = UIColor.init(white: 0.99, alpha: 0.6)
 
     var dataColors: [UIColor] = []
 
     init() {
+        dataColors.append(.blue)
         for _ in 0...30 {
             dataColors.append(.random())
         }

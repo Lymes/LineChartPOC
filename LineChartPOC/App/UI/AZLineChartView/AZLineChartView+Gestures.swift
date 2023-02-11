@@ -17,48 +17,40 @@ extension AZLineChartView {
     }
 
     @objc func tapHandler(_ recognizer: UITapGestureRecognizer) {
-        if let newHighlight = getHighlightByTouchPoint(recognizer.location(in: self)) {
-            var selections = highlighted
-            if selections.count > 1,
-               let closest = selections.closest(to: newHighlight),
-               let index = selections.firstIndex(of: closest) {
-                selections.remove(at: index)
-            }
-            selections.append(newHighlight)
-            highlightValues(selections)
+        guard (datasource?.rangedData.maxPoints ?? 0) > 0 else { return }
+        let value = valueForTouchPoint(point: recognizer.location(in: self), axis: .left)
+        if markers.count > 1, let closest = markers.closest(to: value) {
+            closest.value = value
+        } else {
+            appendMarker(with: value)
         }
+        updateLegend()
     }
 
     @objc func dragHandler(_ recognizer: UIPanGestureRecognizer) {
-        if recognizer.state == NSUIGestureRecognizerState.changed,
-           let newHighlight = getHighlightByTouchPoint(recognizer.location(in: self)) {
-            var selections = highlighted
-            if let closest = selections.closest(to: newHighlight),
-               let index = selections.firstIndex(of: closest) {
-                selections.remove(at: index)
-                selections.insert(newHighlight, at: index)
-            } else {
-                if selections.count > 1 {
-                    selections.remove(at: 0)
-                }
-                selections.append(newHighlight)
+        if recognizer.state == NSUIGestureRecognizerState.changed {
+            let value = valueForTouchPoint(point: recognizer.location(in: self), axis: .left)
+            if let closest = markers.closest(to: value) {
+                closest.value = value
             }
-            highlightValues(selections)
+            updateLegend()
         }
     }
 
     @objc func zoomHandler(_ recognizer: UIPinchGestureRecognizer) {
-        guard highlighted.count == 2,
-        let left = highlighted.leftHighlight,
-        let right = highlighted.rightHighlight else { return }
-        if recognizer.state == NSUIGestureRecognizerState.changed {
-            let scale = recognizer.scale
-            if let newLeft = getHighlightByTouchPoint(CGPoint(x: left.drawX / scale, y: left.drawY)),
-               let newRight = getHighlightByTouchPoint(CGPoint(x: right.drawX * scale, y: right.drawY)) {
-                print(newLeft.drawX, newRight.drawX)
-                // highlightValues([newLeft, newRight])
-            }
-        }
-        recognizer.scale = 1.0
+//        guard markers.count == 2, let left = markers.left, let right = markers.right else { return }
+//        if recognizer.state == NSUIGestureRecognizerState.changed {
+//            let scale = recognizer.scale
+//        }
+//        recognizer.scale = 1.0
+//        updateLegend()
+    }
+
+    private func appendMarker(with value: CGPoint) {
+        let marker = AZLineChartMarker(frame: .zero)
+        marker.chartView = self
+        marker.value = value
+        markers.append(marker)
+        bringSubviewToFront(legendView)
     }
 }

@@ -21,13 +21,26 @@ extension AZLineChartView {
 
     func decorate(_ dataSet: LineChartDataSet, _ index: Int) {
         dataSet.lineWidth = 1
-        dataSet.colors = [style.dataColors[index]]
+        let lineColor = style.dataColors[index]
+        dataSet.colors = [lineColor]
         dataSet.drawCircleHoleEnabled = false
         dataSet.drawCirclesEnabled = false
         dataSet.drawValuesEnabled = true
-        dataSet.highlightLineWidth = style.highlightLineWidth
-        dataSet.highlightColor = style.highlightColor
+        dataSet.highlightEnabled = false
         dataSet.drawHorizontalHighlightIndicatorEnabled = false
+        dataSet.drawVerticalHighlightIndicatorEnabled = false
+
+        if index == 0 {
+            let gradientColors = [lineColor.cgColor, lineColor.withAlphaComponent(0).cgColor] as CFArray
+            let colorLocations: [CGFloat] = [1.0, 0.0]
+            let gradient = CGGradient.init(
+                colorsSpace: CGColorSpaceCreateDeviceRGB(),
+                colors: gradientColors,
+                locations: colorLocations
+            )
+            dataSet.fill = LinearGradientFill(gradient: gradient!, angle: 90.0)
+            dataSet.drawFilledEnabled = true
+        }
     }
 
     private func setupBehavior() {
@@ -37,7 +50,6 @@ extension AZLineChartView {
         doubleTapToZoomEnabled = false
         highlightPerTapEnabled = false
         dragEnabled = false
-        marker = AZLineChartMarker.viewFromXib()
         legend.enabled = false
         setupGestures()
     }

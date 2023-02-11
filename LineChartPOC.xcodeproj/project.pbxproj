@@ -30,8 +30,13 @@
 		1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */; };
 		1BB43B29299028D8000F99E6 /* AZLineChartGenericStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */; };
 		1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */; };
-		787115FD299136FA00A351B8 /* AZLineChartMarker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787115FC299136FA00A351B8 /* AZLineChartMarker.xib */; };
 		787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */; };
+		787D56842997CEF600F15C32 /* AZLineChartLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */; };
+		787D56862997CF0500F15C32 /* AZLineChartLegendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */; };
+		787D56882997E13300F15C32 /* AZLegendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787D56872997E13300F15C32 /* AZLegendViewCell.xib */; };
+		787D568A2997E1A200F15C32 /* AZLegendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D56892997E1A200F15C32 /* AZLegendViewCell.swift */; };
+		787D568F299807FF00F15C32 /* line_data_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 787D568E299807FF00F15C32 /* line_data_1.json */; };
+		787D56912998267700F15C32 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D56902998267700F15C32 /* CALayer+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +75,13 @@
 		1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartStyle.swift; sourceTree = "<group>"; };
 		1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartGenericStyle.swift; sourceTree = "<group>"; };
 		1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Config.swift"; sourceTree = "<group>"; };
-		787115FC299136FA00A351B8 /* AZLineChartMarker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AZLineChartMarker.xib; sourceTree = "<group>"; };
 		787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartXAxisRenderer.swift; sourceTree = "<group>"; };
+		787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartLegendView.swift; sourceTree = "<group>"; };
+		787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AZLineChartLegendView.xib; sourceTree = "<group>"; };
+		787D56872997E13300F15C32 /* AZLegendViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AZLegendViewCell.xib; sourceTree = "<group>"; };
+		787D56892997E1A200F15C32 /* AZLegendViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLegendViewCell.swift; sourceTree = "<group>"; };
+		787D568E299807FF00F15C32 /* line_data_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = line_data_1.json; sourceTree = "<group>"; };
+		787D56902998267700F15C32 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +134,6 @@
 		1B92CE9E298DAF0500088D5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				787115F72990EDF900A351B8 /* Legend */,
 				1B92CEAB298DB4D000088D5B /* AZLineChartView */,
 				1B92CE8E298DAEE800088D5B /* ViewController.swift */,
 				1B92CEA6298DB08600088D5B /* ViewModel.swift */,
@@ -135,6 +144,7 @@
 		1B92CE9F298DAF0C00088D5B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				787D568E299807FF00F15C32 /* line_data_1.json */,
 				1B92CEA4298DB06D00088D5B /* line_data_30.json */,
 				1B92CE90298DAEE800088D5B /* Main.storyboard */,
 				1B92CE93298DAEEB00088D5B /* Assets.xcassets */,
@@ -166,6 +176,7 @@
 		1B92CEAB298DB4D000088D5B /* AZLineChartView */ = {
 			isa = PBXGroup;
 			children = (
+				787D568B2997EFEA00F15C32 /* Renderers */,
 				1BB43B2B29902B08000F99E6 /* Data */,
 				1BB43B25299027FF000F99E6 /* Styles */,
 				1BB43B2E2990338E000F99E6 /* Formatters */,
@@ -173,8 +184,6 @@
 				1B92CEAC298DB50200088D5B /* AZLineChartView.swift */,
 				1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */,
 				1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */,
-				1B92CEB4298E392000088D5B /* AZLineChartRenderer.swift */,
-				787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */,
 			);
 			path = AZLineChartView;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */,
+				787D56902998267700F15C32 /* CALayer+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -208,7 +218,10 @@
 			isa = PBXGroup;
 			children = (
 				1BB43B1C298FA085000F99E6 /* AZLineChartMarker.swift */,
-				787115FC299136FA00A351B8 /* AZLineChartMarker.xib */,
+				787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */,
+				787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */,
+				787D56892997E1A200F15C32 /* AZLegendViewCell.swift */,
+				787D56872997E13300F15C32 /* AZLegendViewCell.xib */,
 			);
 			path = Marker;
 			sourceTree = "<group>";
@@ -231,11 +244,13 @@
 			path = Formatters;
 			sourceTree = "<group>";
 		};
-		787115F72990EDF900A351B8 /* Legend */ = {
+		787D568B2997EFEA00F15C32 /* Renderers */ = {
 			isa = PBXGroup;
 			children = (
+				787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */,
+				1B92CEB4298E392000088D5B /* AZLineChartRenderer.swift */,
 			);
-			path = Legend;
+			path = Renderers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,10 +342,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B92CEA5298DB06D00088D5B /* line_data_30.json in Resources */,
-				787115FD299136FA00A351B8 /* AZLineChartMarker.xib in Resources */,
+				787D56862997CF0500F15C32 /* AZLineChartLegendView.xib in Resources */,
+				787D56882997E13300F15C32 /* AZLegendViewCell.xib in Resources */,
 				1B92CE97298DAEEB00088D5B /* LaunchScreen.storyboard in Resources */,
 				1B92CE94298DAEEB00088D5B /* Assets.xcassets in Resources */,
 				1B92CE92298DAEE800088D5B /* Main.storyboard in Resources */,
+				787D568F299807FF00F15C32 /* line_data_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +378,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/usr/local/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -372,9 +389,11 @@
 			files = (
 				1B92CEC6298E789B00088D5B /* DataPointInterpolator.swift in Sources */,
 				1BB43B24299020E3000F99E6 /* UIColor+Extensions.swift in Sources */,
+				787D568A2997E1A200F15C32 /* AZLegendViewCell.swift in Sources */,
 				787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */,
 				1B92CEAD298DB50200088D5B /* AZLineChartView.swift in Sources */,
 				1BB43B21298FB5F6000F99E6 /* AZLineChartView+Gestures.swift in Sources */,
+				787D56842997CEF600F15C32 /* AZLineChartLegendView.swift in Sources */,
 				1B92CEB7298E697400088D5B /* Array+Extensions.swift in Sources */,
 				1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */,
 				1BB43B1D298FA085000F99E6 /* AZLineChartMarker.swift in Sources */,
@@ -386,6 +405,7 @@
 				1BB43B29299028D8000F99E6 /* AZLineChartGenericStyle.swift in Sources */,
 				1BB43B1B298F96D0000F99E6 /* AZLineChartXFormatter.swift in Sources */,
 				1B92CE8B298DAEE800088D5B /* AppDelegate.swift in Sources */,
+				787D56912998267700F15C32 /* CALayer+Extensions.swift in Sources */,
 				1B92CEA7298DB08600088D5B /* ViewModel.swift in Sources */,
 				1B92CE8D298DAEE800088D5B /* SceneDelegate.swift in Sources */,
 			);
@@ -556,8 +576,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,8 +604,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
