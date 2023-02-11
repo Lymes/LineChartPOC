@@ -217,11 +217,10 @@
 		1BB43B2A29902AF7000F99E6 /* Marker */ = {
 			isa = PBXGroup;
 			children = (
+				787D5692299834DC00F15C32 /* Cells */,
 				1BB43B1C298FA085000F99E6 /* AZLineChartMarkerView.swift */,
 				787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */,
 				787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */,
-				787D56892997E1A200F15C32 /* AZLegendViewCell.swift */,
-				787D56872997E13300F15C32 /* AZLegendViewCell.xib */,
 			);
 			path = Marker;
 			sourceTree = "<group>";
@@ -251,6 +250,15 @@
 				1B92CEB4298E392000088D5B /* AZLineChartRenderer.swift */,
 			);
 			path = Renderers;
+			sourceTree = "<group>";
+		};
+		787D5692299834DC00F15C32 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				787D56892997E1A200F15C32 /* AZLegendViewCell.swift */,
+				787D56872997E13300F15C32 /* AZLegendViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
