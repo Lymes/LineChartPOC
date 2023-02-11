@@ -10,7 +10,7 @@ import Charts
 import CoreGraphics
 import Foundation
 
-final class AZLineChartMarker: UIView {
+final class AZLineChartMarkerView: UIView {
     static let width: CGFloat = 50
 
     var chartView: AZLineChartView? {

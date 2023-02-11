@@ -24,7 +24,7 @@
 		1B92CEBF298E721900088D5B /* LineChartPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEBE298E721900088D5B /* LineChartPOCTests.swift */; };
 		1B92CEC6298E789B00088D5B /* DataPointInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEC5298E789B00088D5B /* DataPointInterpolator.swift */; };
 		1BB43B1B298F96D0000F99E6 /* AZLineChartXFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */; };
-		1BB43B1D298FA085000F99E6 /* AZLineChartMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B1C298FA085000F99E6 /* AZLineChartMarker.swift */; };
+		1BB43B1D298FA085000F99E6 /* AZLineChartMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B1C298FA085000F99E6 /* AZLineChartMarkerView.swift */; };
 		1BB43B21298FB5F6000F99E6 /* AZLineChartView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */; };
 		1BB43B24299020E3000F99E6 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */; };
 		1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */; };
@@ -69,7 +69,7 @@
 		1B92CEBE298E721900088D5B /* LineChartPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartPOCTests.swift; sourceTree = "<group>"; };
 		1B92CEC5298E789B00088D5B /* DataPointInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointInterpolator.swift; sourceTree = "<group>"; };
 		1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartXFormatter.swift; sourceTree = "<group>"; };
-		1BB43B1C298FA085000F99E6 /* AZLineChartMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartMarker.swift; sourceTree = "<group>"; };
+		1BB43B1C298FA085000F99E6 /* AZLineChartMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartMarkerView.swift; sourceTree = "<group>"; };
 		1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Gestures.swift"; sourceTree = "<group>"; };
 		1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartStyle.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		1BB43B2A29902AF7000F99E6 /* Marker */ = {
 			isa = PBXGroup;
 			children = (
-				1BB43B1C298FA085000F99E6 /* AZLineChartMarker.swift */,
+				1BB43B1C298FA085000F99E6 /* AZLineChartMarkerView.swift */,
 				787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */,
 				787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */,
 				787D56892997E1A200F15C32 /* AZLegendViewCell.swift */,
@@ -396,7 +396,7 @@
 				787D56842997CEF600F15C32 /* AZLineChartLegendView.swift in Sources */,
 				1B92CEB7298E697400088D5B /* Array+Extensions.swift in Sources */,
 				1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */,
-				1BB43B1D298FA085000F99E6 /* AZLineChartMarker.swift in Sources */,
+				1BB43B1D298FA085000F99E6 /* AZLineChartMarkerView.swift in Sources */,
 				1B92CEB5298E392000088D5B /* AZLineChartRenderer.swift in Sources */,
 				1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */,
 				1B92CEAA298DB10000088D5B /* DataModel.swift in Sources */,

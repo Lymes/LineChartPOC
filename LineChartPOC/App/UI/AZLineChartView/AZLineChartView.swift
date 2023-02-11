@@ -12,7 +12,7 @@ import Combine
 final class AZLineChartView: LineChartView, ChartViewDelegate {
 
     private var cancellable: AnyCancellable?
-    var markers: [AZLineChartMarker] = []
+    var markers: [AZLineChartMarkerView] = []
 
     lazy var legendView: AZLineChartLegendView = {
         if let view = (Bundle.main.loadNibNamed(
@@ -100,7 +100,7 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
         }
     }
 
-    private func updateVeil(for left: AZLineChartMarker, and right: AZLineChartMarker) {
+    private func updateVeil(for left: AZLineChartMarkerView, and right: AZLineChartMarkerView) {
         CALayer.perform(withDuration: 0) {
             leftVeil.frame = CGRect(
                 x: viewPortHandler.contentLeft,

@@ -47,7 +47,7 @@ extension AZLineChartView {
     }
 
     private func appendMarker(with value: CGPoint) {
-        let marker = AZLineChartMarker(frame: .zero)
+        let marker = AZLineChartMarkerView(frame: .zero)
         marker.chartView = self
         marker.value = value
         markers.append(marker)
