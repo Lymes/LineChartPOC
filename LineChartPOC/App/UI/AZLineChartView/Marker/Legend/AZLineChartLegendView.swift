@@ -25,7 +25,8 @@ final class AZLineChartLegendView: UIView {
             guard !markers.isEmpty else { return }
             labelView.text = markers.count > 1 ?
                 """
-                \(dateFormatter.string(from: markers[0].date)) - \(dateFormatter.string(from: markers[1].date))
+                \(dateFormatter.string(from: markers.left?.date ?? Date(timeIntervalSince1970: 0))) - \
+                \(dateFormatter.string(from: markers.right?.date ?? Date(timeIntervalSince1970: 0)))
                 """ :
             markers.count == 1 ? "\(dateFormatter.string(from: markers[0].date))" : nil
         }
@@ -58,11 +59,10 @@ final class AZLineChartLegendView: UIView {
         backgroundView.backgroundColor = .white
         backgroundView.layer.mask = baloonMaskLayer
         backgroundView.layer.masksToBounds = true
-
         layer.masksToBounds = false
-        layer.shadowColor = UIColor(white: 0, alpha: 0.4).cgColor
+        layer.shadowColor   = UIColor(white: 0, alpha: 0.4).cgColor
         layer.shadowOpacity = 0.4
-        layer.shadowOffset = .zero
-        layer.shadowRadius = 10
+        layer.shadowOffset  = .zero
+        layer.shadowRadius  = 10.0
     }
 }

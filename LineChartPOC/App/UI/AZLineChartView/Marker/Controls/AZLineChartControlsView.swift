@@ -28,7 +28,7 @@ final class AZLineChartControlsView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        saveButton.layer.cornerRadius = saveButton.frame.height / 2
+        saveButton.layer.cornerRadius   = saveButton.frame.height / 2
         expandButton.layer.cornerRadius = expandButton.frame.height / 2
     }
 
@@ -46,16 +46,16 @@ final class AZLineChartControlsView: UIView {
 
     private func setupView() {
         backgroundColor = .clear
-        saveButton.layer.masksToBounds = false
-        saveButton.layer.shadowColor = UIColor(white: 0, alpha: 0.4).cgColor
-        saveButton.layer.shadowOpacity = 0.4
-        saveButton.layer.shadowOffset = .zero
-        saveButton.layer.shadowRadius = 10
-
+        let shadowColor = UIColor(white: 0, alpha: 0.4).cgColor
+        saveButton.layer.masksToBounds   = false
+        saveButton.layer.shadowColor     = shadowColor
+        saveButton.layer.shadowOpacity   = 0.4
+        saveButton.layer.shadowOffset    = .zero
+        saveButton.layer.shadowRadius    = 10
         expandButton.layer.masksToBounds = false
-        expandButton.layer.shadowColor = UIColor(white: 0, alpha: 0.4).cgColor
+        expandButton.layer.shadowColor   = shadowColor
         expandButton.layer.shadowOpacity = 0.4
-        expandButton.layer.shadowOffset = .zero
-        expandButton.layer.shadowRadius = 10
+        expandButton.layer.shadowOffset  = .zero
+        expandButton.layer.shadowRadius  = 10
     }
 }

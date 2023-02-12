@@ -77,7 +77,7 @@ extension AZLineChartView {
         leftAxis.gridColor = .blue.withAlphaComponent(0.5)
         leftAxis.gridLineWidth = 0.5
         leftAxis.gridLineDashPhase = 0.5
-        leftAxis.gridLineDashLengths = [ 4, 4 ]
+        leftAxis.gridLineDashLengths = [ 4.0, 4.0 ]
 
         rightAxis.labelTextColor = style.rightAxisLabelTextColor
         rightAxis.drawGridLinesEnabled = false

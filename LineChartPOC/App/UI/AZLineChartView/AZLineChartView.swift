@@ -49,6 +49,7 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
     }
 
     func toggleEvents() {
+        // TODO:
         // let events = highlighted.count > 0 ? [] : datasource?.rawData.highlights ?? []
         // highlightValues(events)
     }
@@ -87,8 +88,6 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
             targetXPos = min(max(targetXPos, 5 + midWidth), frame.width - midWidth - 5)
             UIView.animate(withDuration: 0.2) {
                 self.legendView.center = CGPoint(x: targetXPos, y: 0)
-            }
-            UIView.animate(withDuration: 0.2) {
                 self.controlsView.center = CGPoint(x: targetXPos, y: self.viewPortHandler.contentBottom)
             }
             updateVeil(for: left, and: right)
