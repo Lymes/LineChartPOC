@@ -18,7 +18,7 @@ final class ViewModel: NSObject {
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .millisecondsSince1970
 
-            guard let url = Bundle.main.url(forResource: "line_data_1", withExtension: "json"),
+            guard let url = Bundle.main.url(forResource: "line_data_30", withExtension: "json"),
                   let data = try? Data(contentsOf: url) else { return }
             if let decoded = try? decoder.decode([[DataPoint]].self, from: data) {
                 dataSet = decoded

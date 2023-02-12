@@ -16,7 +16,7 @@ final class AZLineChartLegendView: UIView {
     private let baloonMaskLayer = CAShapeLayer()
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd-MMM-yy"
+        formatter.dateFormat = "dd/MMM/yy"
         return formatter
     }()
 

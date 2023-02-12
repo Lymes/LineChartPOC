@@ -21,7 +21,7 @@ final class AZLineChartMarkerView: UIView {
 
     var value: CGPoint = .zero {
         didSet {
-            setValue(xPos: value.x, yPos: value.y)
+            updatePosition()
         }
     }
 
@@ -62,42 +62,29 @@ final class AZLineChartMarkerView: UIView {
                               width: lineWidth,
                               height: chartView?.viewPortHandler.contentHeight ?? 0
                               )
-        let path = UIBezierPath(roundedRect: lineRect, cornerRadius: 4)
-
-        let fillColor = chartView?.style.highlightColor.cgColor ?? UIColor.blue.cgColor
-        context.setStrokeColor(UIColor.black.cgColor)
-        context.setFillColor(fillColor)
-        context.setShadow(offset: .zero, blur: 3.0, color: UIColor(white: 0.01, alpha: 0.6).cgColor)
-        addIntersections(xPos: xPos, to: path)
+        let path = UIBezierPath(rect: lineRect)
         context.addPath(path.cgPath)
         path.close()
+        let fillColor = chartView?.style.highlightColor ?? UIColor.blue
+        context.setFillColor(fillColor.cgColor)
+        context.setShadow(offset: .zero, blur: 3.0, color: fillColor.withAlphaComponent(0.6).cgColor)
         context.drawPath(using: .fill)
+        intersections.compactMap {
+            chartView?.getTransformer(forAxis: .left).pixelForValues(x: $0.x, y: $0.y).y
+        }.forEach { yPos in
+            let center = CGPoint(
+                x: xPos + (chartView?.style.highlightLineWidth ?? 0) / 2,
+                y: yPos)
+            context.drawImage(UIImage(named: "point") ?? UIImage(),
+                              atCenter: center, size: CGSize(width: 20, height: 20))
+        }
     }
 
     // MARK: Private functions
 
-    private func setValue(xPos: Double, yPos: Double) {
-        let xPos = max(0, point.x - Self.width / 2)
-        let rect = CGRect(x: xPos, y: 0, width: Self.width, height: chartView?.frame.height ?? 0)
-        frame = rect
+    private func updatePosition() {
+        frame = CGRect(x: max(0, point.x - Self.width / 2),
+                       y: 0, width: Self.width, height: chartView?.frame.height ?? 0)
         setNeedsDisplay()
-    }
-
-    private func addIntersections(xPos: CGFloat, to path: UIBezierPath) {
-        intersections.compactMap {
-            chartView?.getTransformer(forAxis: .left).pixelForValues(x: $0.x, y: $0.y).y
-        }.forEach { yPos in
-            path.append(
-                UIBezierPath(
-                    arcCenter: CGPoint(
-                        x: xPos + (chartView?.style.highlightLineWidth ?? 0) / 2,
-                        y: yPos),
-                    radius: 10,
-                    startAngle: 0,
-                    endAngle: 2 * .pi,
-                    clockwise: true
-                )
-            )
-        }
     }
 }
