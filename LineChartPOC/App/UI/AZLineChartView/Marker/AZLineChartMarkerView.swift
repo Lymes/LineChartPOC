@@ -25,6 +25,10 @@ final class AZLineChartMarkerView: UIView {
         }
     }
 
+    var date: Date {
+        Date(timeIntervalSince1970: value.x)
+    }
+
     var intersections: [ChartDataEntry] {
         chartView?.lineData?.dataSets.compactMap { $0.entryForXValue(value.x, closestToY: value.y) } ?? []
     }

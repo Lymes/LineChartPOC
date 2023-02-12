@@ -47,13 +47,13 @@ final class AZLineChartControlsView: UIView {
     private func setupView() {
         backgroundColor = .clear
         saveButton.layer.masksToBounds = false
-        saveButton.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor
+        saveButton.layer.shadowColor = UIColor(white: 0, alpha: 0.4).cgColor
         saveButton.layer.shadowOpacity = 0.4
         saveButton.layer.shadowOffset = .zero
         saveButton.layer.shadowRadius = 10
 
         expandButton.layer.masksToBounds = false
-        expandButton.layer.shadowColor = UIColor.black.withAlphaComponent(0.4).cgColor
+        expandButton.layer.shadowColor = UIColor(white: 0, alpha: 0.4).cgColor
         expandButton.layer.shadowOpacity = 0.4
         expandButton.layer.shadowOffset = .zero
         expandButton.layer.shadowRadius = 10

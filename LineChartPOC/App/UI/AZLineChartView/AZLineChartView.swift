@@ -77,6 +77,7 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
 
     func updateLegend() {
         legendView.isHidden = markers.isEmpty
+        legendView.markers = markers
         controlsView.isHidden = markers.count != 2
         rightVeilLayer.isHidden = markers.count != 2
         leftVeilLayer.isHidden = markers.count != 2

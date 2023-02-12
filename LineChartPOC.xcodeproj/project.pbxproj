@@ -40,6 +40,7 @@
 		787D568F299807FF00F15C32 /* line_data_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 787D568E299807FF00F15C32 /* line_data_1.json */; };
 		787D56912998267700F15C32 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D56902998267700F15C32 /* CALayer+Extensions.swift */; };
 		78B70E4D2998CEF0005310B1 /* AZLineChartControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78B70E4C2998CEEF005310B1 /* AZLineChartControlsView.xib */; };
+		78B70E502998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B70E4F2998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		787D568E299807FF00F15C32 /* line_data_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = line_data_1.json; sourceTree = "<group>"; };
 		787D56902998267700F15C32 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
 		78B70E4C2998CEEF005310B1 /* AZLineChartControlsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AZLineChartControlsView.xib; sourceTree = "<group>"; };
+		78B70E4F2998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartLegendView+Balloon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 				787D5692299834DC00F15C32 /* Cells */,
 				787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */,
 				787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */,
+				78B70E4F2998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift */,
 			);
 			path = Legend;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				787D56912998267700F15C32 /* CALayer+Extensions.swift in Sources */,
 				1B92CEA7298DB08600088D5B /* ViewModel.swift in Sources */,
 				1B92CE8D298DAEE800088D5B /* SceneDelegate.swift in Sources */,
+				78B70E502998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,8 +616,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,9 +626,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lymes.LineChartPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -640,8 +648,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,9 +658,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lymes.LineChartPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

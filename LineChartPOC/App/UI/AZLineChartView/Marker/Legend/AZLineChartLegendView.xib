@@ -15,28 +15,49 @@
             <rect key="frame" x="0.0" y="0.0" width="533" height="152"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="338-si-RTp">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-Ut-nhE">
                     <rect key="frame" x="0.0" y="0.0" width="533" height="152"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="338-si-RTp">
+                            <rect key="frame" x="10" y="10" width="513" height="112"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Udj-aF-i17">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-9V-fyQ">
+                            <rect key="frame" x="53" y="43" width="441" height="47"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" systemColor="systemGray2Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Udj-aF-i17">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                    <constraints>
+                        <constraint firstItem="338-si-RTp" firstAttribute="top" secondItem="0TK-Ut-nhE" secondAttribute="top" constant="10" id="8NQ-aZ-kMb"/>
+                        <constraint firstAttribute="bottom" secondItem="338-si-RTp" secondAttribute="bottom" constant="30" id="TWE-4A-7al"/>
+                        <constraint firstAttribute="trailing" secondItem="338-si-RTp" secondAttribute="trailing" constant="10" id="e2B-Fc-7Q9"/>
+                        <constraint firstItem="338-si-RTp" firstAttribute="leading" secondItem="0TK-Ut-nhE" secondAttribute="leading" constant="10" id="kHD-Np-UsQ"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="338-si-RTp" secondAttribute="bottom" id="3Rk-Ff-PqB"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="338-si-RTp" secondAttribute="trailing" id="QRb-fF-3DS"/>
-                <constraint firstItem="338-si-RTp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hmr-Xu-W3o"/>
-                <constraint firstItem="338-si-RTp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q0u-bZ-Dbw"/>
+                <constraint firstAttribute="bottom" secondItem="0TK-Ut-nhE" secondAttribute="bottom" id="IeT-Zi-u2W"/>
+                <constraint firstItem="0TK-Ut-nhE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YRh-tu-8zU"/>
+                <constraint firstAttribute="trailing" secondItem="0TK-Ut-nhE" secondAttribute="trailing" id="kdd-TN-aWq"/>
+                <constraint firstItem="0TK-Ut-nhE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o6S-jV-ly2"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="backgroundView" destination="0TK-Ut-nhE" id="lGR-uH-mFj"/>
                 <outlet property="collectionView" destination="338-si-RTp" id="2xx-sL-HCF"/>
+                <outlet property="labelView" destination="RgY-9V-fyQ" id="qiR-11-Sz5"/>
             </connections>
             <point key="canvasLocation" x="223.66412213740458" y="-226.7605633802817"/>
         </view>
@@ -44,6 +65,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
