@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AZLineChartControlsView" customModule="LineChartPOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KlE-pw-6bT">
+                    <rect key="frame" x="6" y="8" width="194" height="84"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5x-Hn-ehI">
+                            <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="expand"/>
+                            <connections>
+                                <action selector="expandTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="cgS-HV-Xao"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWv-Uy-JKy">
+                            <rect key="frame" x="101" y="0.0" width="93" height="84"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="save"/>
+                            <connections>
+                                <action selector="saveTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="cUA-nh-B0x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KlE-pw-6bT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="1dU-ww-J56"/>
+                <constraint firstItem="KlE-pw-6bT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Gb7-E3-1W5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KlE-pw-6bT" secondAttribute="bottom" constant="8" id="S6w-B6-Ff6"/>
+                <constraint firstAttribute="trailing" secondItem="KlE-pw-6bT" secondAttribute="trailing" constant="6" id="Zwp-xP-lbW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="expandButton" destination="L5x-Hn-ehI" id="TOF-Ou-Pct"/>
+                <outlet property="saveButton" destination="zWv-Uy-JKy" id="djC-G7-rY7"/>
+            </connections>
+            <point key="canvasLocation" x="126.71755725190839" y="-176.05633802816902"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="expand" width="20" height="21"/>
+        <image name="save" width="20" height="21"/>
+    </resources>
+</document>

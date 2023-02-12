@@ -14,29 +14,11 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
     private var cancellable: AnyCancellable?
     var markers: [AZLineChartMarkerView] = []
 
-    lazy var legendView: AZLineChartLegendView = {
-        if let view = (Bundle.main.loadNibNamed(
-            "AZLineChartLegendView", owner: self, options: nil)![0]) as? AZLineChartLegendView {
-            addSubview(view)
-            return view
-        }
-        return AZLineChartLegendView()
-    }()
-
-    lazy var leftVeil: CALayer = {
-       let veil = CALayer()
-        veil.backgroundColor = style.veilColor.cgColor
-        veil.zPosition = -1
-        layer.addSublayer(veil)
-        return veil
-    }()
-    lazy var rightVeil: CALayer = {
-       let veil = CALayer()
-        veil.backgroundColor = style.veilColor.cgColor
-        veil.zPosition = -1
-        layer.addSublayer(veil)
-        return veil
-    }()
+    // MARK: Additional controls
+    lazy var legendView = createLegendView()
+    lazy var controlsView = createControlsView()
+    lazy var leftVeilLayer = createLeftVeilLayer()
+    lazy var rightVeilLayer = createRightVeilLayer()
 
     // MARK: Public API
 
@@ -89,6 +71,7 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
 
     func updateLegend() {
         legendView.isHidden = markers.isEmpty
+        controlsView.isHidden = markers.count != 2
         if let left = markers.left, let right = markers.right {
             let midWidth = legendView.frame.width / 2.0
             var targetXPos = left.center.x + (right.center.x - left.center.x) / 2.0
@@ -96,26 +79,29 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
             UIView.animate(withDuration: 0.2) {
                 self.legendView.center = CGPoint(x: targetXPos, y: 0)
             }
+            UIView.animate(withDuration: 0.2) {
+                self.controlsView.center = CGPoint(x: targetXPos, y: self.viewPortHandler.contentBottom)
+            }
             updateVeil(for: left, and: right)
         }
     }
 
     private func updateVeil(for left: AZLineChartMarkerView, and right: AZLineChartMarkerView) {
         CALayer.perform(withDuration: 0) {
-            leftVeil.frame = CGRect(
+            leftVeilLayer.frame = CGRect(
                 x: viewPortHandler.contentLeft,
                 y: viewPortHandler.contentTop,
                 width: left.point.x - viewPortHandler.contentLeft,
                 height: viewPortHandler.contentHeight
             )
-            rightVeil.frame = CGRect(
+            rightVeilLayer.frame = CGRect(
                 x: right.point.x,
                 y: viewPortHandler.contentTop,
                 width: viewPortHandler.contentWidth + viewPortHandler.contentLeft - right.point.x,
                 height: viewPortHandler.contentHeight
             )
         }
-        rightVeil.isHidden = markers.count != 2
-        leftVeil.isHidden = markers.count != 2
+        rightVeilLayer.isHidden = markers.count != 2
+        leftVeilLayer.isHidden = markers.count != 2
     }
 }

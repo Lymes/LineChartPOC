@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AZLineChartLegendView: UIView {
+final class AZLineChartLegendView: UIView {
 
     @IBOutlet weak var collectionView: UICollectionView!
 

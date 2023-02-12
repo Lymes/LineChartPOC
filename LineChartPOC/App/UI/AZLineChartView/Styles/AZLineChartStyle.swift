@@ -22,5 +22,7 @@ protocol AZLineChartStyle {
 
     var veilColor: UIColor { get }
 
+    var zoomMagnifyingStep: CGFloat { get }
+
     var dataColors: [UIColor] { get }
 }

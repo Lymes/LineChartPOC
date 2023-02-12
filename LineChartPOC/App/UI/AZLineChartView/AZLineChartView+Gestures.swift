@@ -28,7 +28,7 @@ extension AZLineChartView {
     }
 
     @objc func dragHandler(_ recognizer: UIPanGestureRecognizer) {
-        if recognizer.state == NSUIGestureRecognizerState.changed {
+        if recognizer.state == .changed {
             let value = valueForTouchPoint(point: recognizer.location(in: self), axis: .left)
             if let closest = markers.closest(to: value) {
                 closest.value = value
@@ -38,12 +38,16 @@ extension AZLineChartView {
     }
 
     @objc func zoomHandler(_ recognizer: UIPinchGestureRecognizer) {
-//        guard markers.count == 2, let left = markers.left, let right = markers.right else { return }
-//        if recognizer.state == NSUIGestureRecognizerState.changed {
-//            let scale = recognizer.scale
-//        }
-//        recognizer.scale = 1.0
-//        updateLegend()
+        guard markers.count == 2, let left = markers.left, let right = markers.right else { return }
+        if recognizer.state == .changed {
+            let magnifying = recognizer.scale > 1 ? style.zoomMagnifyingStep : -style.zoomMagnifyingStep
+            let newLeftCenter = CGPoint(x: left.center.x - magnifying, y: left.center.y)
+            left.value = valueForTouchPoint(point: newLeftCenter, axis: .left)
+            let newRightCenter = CGPoint(x: right.center.x + magnifying, y: right.center.y)
+            right.value = valueForTouchPoint(point: newRightCenter, axis: .left)
+            updateLegend()
+            recognizer.scale = 1
+        }
     }
 
     private func appendMarker(with value: CGPoint) {
@@ -52,5 +56,6 @@ extension AZLineChartView {
         marker.value = value
         markers.append(marker)
         bringSubviewToFront(legendView)
+        bringSubviewToFront(controlsView)
     }
 }

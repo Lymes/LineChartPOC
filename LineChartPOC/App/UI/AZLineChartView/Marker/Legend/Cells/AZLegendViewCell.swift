@@ -7,6 +7,6 @@
 
 import UIKit
 
-class AZLegendViewCell: UICollectionViewCell {
+final class AZLegendViewCell: UICollectionViewCell {
 
 }

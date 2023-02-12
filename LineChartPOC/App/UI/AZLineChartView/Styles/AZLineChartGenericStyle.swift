@@ -23,6 +23,8 @@ struct AZLineChartGenericStyle: AZLineChartStyle {
 
     let veilColor = UIColor.init(white: 0.99, alpha: 0.6)
 
+    let zoomMagnifyingStep: CGFloat = 5
+
     var dataColors: [UIColor] = []
 
     init() {

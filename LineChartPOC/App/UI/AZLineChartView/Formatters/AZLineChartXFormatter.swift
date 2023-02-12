@@ -8,7 +8,7 @@
 import Foundation
 import Charts
 
-class AZLineChartXFormatter: NSObject {
+final class AZLineChartXFormatter: NSObject {
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM yy"
