@@ -11,7 +11,7 @@ import CoreGraphics
 import Foundation
 
 final class AZLineChartMarkerView: UIView {
-    static let width: CGFloat = 50
+    static let contextWidth: CGFloat = 50.0
 
     var chartView: AZLineChartView? {
         didSet {
@@ -56,7 +56,7 @@ final class AZLineChartMarkerView: UIView {
         guard let context = UIGraphicsGetCurrentContext() else { return }
 
         let lineWidth = chartView?.style.highlightLineWidth ?? 0
-        let xPos = (Self.width - lineWidth) / 2
+        let xPos = (Self.contextWidth - lineWidth) / 2.0
         let lineRect = CGRect(x: xPos,
                               y: chartView?.viewPortHandler.contentTop ?? 0,
                               width: lineWidth,
@@ -73,18 +73,18 @@ final class AZLineChartMarkerView: UIView {
             chartView?.getTransformer(forAxis: .left).pixelForValues(x: $0.x, y: $0.y).y
         }.forEach { yPos in
             let center = CGPoint(
-                x: xPos + (chartView?.style.highlightLineWidth ?? 0) / 2,
+                x: xPos + (chartView?.style.highlightLineWidth ?? 0) / 2.0,
                 y: yPos)
             context.drawImage(UIImage(named: "point") ?? UIImage(),
-                              atCenter: center, size: CGSize(width: 20, height: 20))
+                              atCenter: center, size: CGSize(width: 20.0, height: 20.0))
         }
     }
 
     // MARK: Private functions
 
     private func updatePosition() {
-        frame = CGRect(x: max(0, point.x - Self.width / 2),
-                       y: 0, width: Self.width, height: chartView?.frame.height ?? 0)
+        frame = CGRect(x: max(0, point.x - Self.contextWidth / 2.0),
+                       y: 0, width: Self.contextWidth, height: chartView?.frame.height ?? 0)
         setNeedsDisplay()
     }
 }
