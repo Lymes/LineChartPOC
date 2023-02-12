@@ -53,6 +53,12 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
         // highlightValues(events)
     }
 
+    func removeMarkers() {
+        markers.forEach { $0.removeFromSuperview() }
+        markers = []
+        updateLegend()
+    }
+
     // MARK: Private methods
 
     private func setupObservers() {
@@ -72,6 +78,8 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
     func updateLegend() {
         legendView.isHidden = markers.isEmpty
         controlsView.isHidden = markers.count != 2
+        rightVeilLayer.isHidden = markers.count != 2
+        leftVeilLayer.isHidden = markers.count != 2
         if let left = markers.left, let right = markers.right {
             let midWidth = legendView.frame.width / 2.0
             var targetXPos = left.center.x + (right.center.x - left.center.x) / 2.0
@@ -101,7 +109,5 @@ final class AZLineChartView: LineChartView, ChartViewDelegate {
                 height: viewPortHandler.contentHeight
             )
         }
-        rightVeilLayer.isHidden = markers.count != 2
-        leftVeilLayer.isHidden = markers.count != 2
     }
 }

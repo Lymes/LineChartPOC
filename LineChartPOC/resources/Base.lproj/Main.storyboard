@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="119" width="393" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CcU-EE-kLj">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CcU-EE-kLj">
                                 <rect key="frame" x="24" y="658" width="345" height="54.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdx-k2-6rh">
@@ -34,7 +34,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHw-MX-kCZ">
                                         <rect key="frame" x="117.66666666666666" y="0.0" width="109.66666666666666" height="54.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Zoom to Markers"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Remove Markers"/>
                                         <connections>
                                             <action selector="zoomToMarkers" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4w-5e-bLt"/>
                                         </connections>

@@ -47,11 +47,7 @@ final class ViewController: UIViewController {
     }
 
     @IBAction func zoomToMarkers() {
-        if let range = chartView.markersRange {
-            datasource.setRange(
-                startDate: range.0,
-                endDate: range.1)
-        }
+        chartView.removeMarkers()
     }
 
     @IBAction func toggleEvents() {
