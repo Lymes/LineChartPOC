@@ -26,7 +26,7 @@ extension AZLineChartView: AZLineChartControlsDelegate {
         if let view = (Bundle.main.loadNibNamed(
             String(describing: AZLineChartLegendView.self),
             owner: self, options: nil)![0]) as? AZLineChartLegendView {
-            view.frame = CGRect(x: 0, y: 0, width: bounds.width / 4, height: bounds.height / 5)
+            view.frame = CGRect(x: 0, y: 0, width: bounds.width / 5, height: bounds.height / 6)
             addSubview(view)
             return view
         }

@@ -11,6 +11,7 @@ final class AZLineChartLegendView: UIView {
 
     @IBOutlet weak var labelView: UILabel!
     @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
 
     private let baloonMaskLayer = CAShapeLayer()
@@ -42,6 +43,8 @@ final class AZLineChartLegendView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+        contentView.frame = CGRect(x: 10, y: 10, width: bounds.width - 20, height: bounds.height - 40)
+        labelView.frame = contentView.bounds.insetBy(dx: 10, dy: 10)
         let balloonPath = balloonPath(frame: bounds).cgPath
         baloonMaskLayer.frame = bounds
         baloonMaskLayer.path = balloonPath
