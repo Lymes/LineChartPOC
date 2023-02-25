@@ -18,10 +18,15 @@ final class AZLineChartDataSource {
     @Published
     var chartData: LineChartData = LineChartData()
 
+    var calculatePerformance = true {
+        didSet {
+            updateChartData()
+        }
+    }
+
     var rangedData: [[DataPoint]] = [] {
         didSet {
-            let dataSets = rangedData.createChartDatasets(decorator: dataSetDecorator)
-            chartData = LineChartData(dataSets: dataSets)
+            updateChartData()
         }
     }
 
@@ -39,5 +44,11 @@ final class AZLineChartDataSource {
         rangedData = rawData
             .getRange(startDate: startDate, endDate: endDate)
             .filter(by: Self.maxVisiblePoints, interpolator: LinearInterpolator())
+    }
+
+    private func updateChartData() {
+        let dataSets = rangedData.createChartDatasets(decorator: dataSetDecorator,
+                                                      calculatePerformance: calculatePerformance)
+        chartData = LineChartData(dataSets: dataSets)
     }
 }

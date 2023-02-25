@@ -18,11 +18,13 @@ extension Array where Element == DataPoint {
         self.max { point1, point2 in point1.date < point2.date }?.date ?? Date()
     }
 
-    var chartDataset: LineChartDataSet {
+    func chartDataset(calculatePerformance: Bool) -> LineChartDataSet {
         LineChartDataSet(entries: map {
             ChartDataEntry(
                 x: Double($0.date.timeIntervalSince1970),
-                y: Double($0.value),
+                y: calculatePerformance ?
+                    Double($0.value - (first?.value ?? 0)) / Double(first?.value ?? 0) :
+                    Double($0.value),
                 data: $0
             )
         })
@@ -86,10 +88,11 @@ extension Array where Element == [DataPoint] {
         return stride > 2 ? decimate(by: stride, interpolator: interpolator) : self
     }
 
-    func createChartDatasets(decorator: DataSetDecorator? ) -> [LineChartDataSet] {
+    func createChartDatasets(decorator: DataSetDecorator?, calculatePerformance: Bool) -> [LineChartDataSet] {
         enumerated().map { index, element in
-            guard let decorator = decorator else { return element.chartDataset }
-            return decorator(element.chartDataset, index)
+            let dataSet = element.chartDataset(calculatePerformance: calculatePerformance)
+            guard let decorator = decorator else { return dataSet }
+            return decorator(dataSet, index)
         }
     }
 }

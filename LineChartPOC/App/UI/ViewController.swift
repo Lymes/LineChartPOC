@@ -40,6 +40,10 @@ final class ViewController: UIViewController {
 
     // MARK: Actions
 
+    @IBAction func togglePerformance() {
+        datasource.calculatePerformance.toggle()
+    }
+
     @IBAction func zoomFull() {
         datasource.setRange(
             startDate: datasource.rawData.minDate,

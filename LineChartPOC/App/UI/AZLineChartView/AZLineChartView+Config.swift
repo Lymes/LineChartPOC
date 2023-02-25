@@ -20,7 +20,7 @@ extension AZLineChartView {
     }
 
     func decorate(_ dataSet: LineChartDataSet, _ index: Int) {
-        dataSet.lineWidth = 1
+        dataSet.lineWidth = style.lineWidth
         let lineColor = style.dataColors[index]
         dataSet.colors = [lineColor]
         dataSet.drawCircleHoleEnabled = false
