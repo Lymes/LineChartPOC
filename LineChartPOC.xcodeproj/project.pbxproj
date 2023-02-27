@@ -26,13 +26,13 @@
 		1BB43B1B298F96D0000F99E6 /* AZLineChartXFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */; };
 		1BB43B1D298FA085000F99E6 /* AZLineChartMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B1C298FA085000F99E6 /* AZLineChartMarkerView.swift */; };
 		1BB43B21298FB5F6000F99E6 /* AZLineChartView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */; };
-		1BB43B24299020E3000F99E6 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */; };
 		1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */; };
 		1BB43B29299028D8000F99E6 /* AZLineChartGenericStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */; };
 		1BB43B2D299031AB000F99E6 /* AZLineChartView+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */; };
 		782069AB2998C62800D1C495 /* AZLineChartControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782069AA2998C62800D1C495 /* AZLineChartControlsView.swift */; };
 		782069AF2998CA1600D1C495 /* AZLineChartView+Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782069AE2998CA1600D1C495 /* AZLineChartView+Controls.swift */; };
 		787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */; };
+		7876102D29AD13B7003ED18C /* GraphLineresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7876102C29AD13B7003ED18C /* GraphLineresponse.json */; };
 		787D56842997CEF600F15C32 /* AZLineChartLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */; };
 		787D56862997CF0500F15C32 /* AZLineChartLegendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */; };
 		787D56882997E13300F15C32 /* AZLegendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787D56872997E13300F15C32 /* AZLegendViewCell.xib */; };
@@ -75,13 +75,13 @@
 		1BB43B1A298F96D0000F99E6 /* AZLineChartXFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartXFormatter.swift; sourceTree = "<group>"; };
 		1BB43B1C298FA085000F99E6 /* AZLineChartMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartMarkerView.swift; sourceTree = "<group>"; };
 		1BB43B20298FB5F6000F99E6 /* AZLineChartView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Gestures.swift"; sourceTree = "<group>"; };
-		1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1BB43B262990282D000F99E6 /* AZLineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartStyle.swift; sourceTree = "<group>"; };
 		1BB43B28299028D8000F99E6 /* AZLineChartGenericStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartGenericStyle.swift; sourceTree = "<group>"; };
 		1BB43B2C299031AB000F99E6 /* AZLineChartView+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Config.swift"; sourceTree = "<group>"; };
 		782069AA2998C62800D1C495 /* AZLineChartControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartControlsView.swift; sourceTree = "<group>"; };
 		782069AE2998CA1600D1C495 /* AZLineChartView+Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartView+Controls.swift"; sourceTree = "<group>"; };
 		787115FE29914BD000A351B8 /* AZLineChartXAxisRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartXAxisRenderer.swift; sourceTree = "<group>"; };
+		7876102C29AD13B7003ED18C /* GraphLineresponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GraphLineresponse.json; sourceTree = "<group>"; };
 		787D56832997CEF600F15C32 /* AZLineChartLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartLegendView.swift; sourceTree = "<group>"; };
 		787D56852997CF0500F15C32 /* AZLineChartLegendView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AZLineChartLegendView.xib; sourceTree = "<group>"; };
 		787D56872997E13300F15C32 /* AZLegendViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AZLegendViewCell.xib; sourceTree = "<group>"; };
@@ -152,6 +152,7 @@
 		1B92CE9F298DAF0C00088D5B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				7876102C29AD13B7003ED18C /* GraphLineresponse.json */,
 				787D568E299807FF00F15C32 /* line_data_1.json */,
 				1B92CEA4298DB06D00088D5B /* line_data_30.json */,
 				1B92CE90298DAEE800088D5B /* Main.storyboard */,
@@ -208,7 +209,6 @@
 		1BB43B22299020CB000F99E6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1BB43B23299020E3000F99E6 /* UIColor+Extensions.swift */,
 				787D56902998267700F15C32 /* CALayer+Extensions.swift */,
 			);
 			path = Utils;
@@ -379,6 +379,7 @@
 			files = (
 				78B70E4D2998CEF0005310B1 /* AZLineChartControlsView.xib in Resources */,
 				1B92CEA5298DB06D00088D5B /* line_data_30.json in Resources */,
+				7876102D29AD13B7003ED18C /* GraphLineresponse.json in Resources */,
 				787D56862997CF0500F15C32 /* AZLineChartLegendView.xib in Resources */,
 				787D56882997E13300F15C32 /* AZLegendViewCell.xib in Resources */,
 				1B92CE97298DAEEB00088D5B /* LaunchScreen.storyboard in Resources */,
@@ -425,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B92CEC6298E789B00088D5B /* DataPointInterpolator.swift in Sources */,
-				1BB43B24299020E3000F99E6 /* UIColor+Extensions.swift in Sources */,
 				787D568A2997E1A200F15C32 /* AZLegendViewCell.swift in Sources */,
 				787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */,
 				1B92CEAD298DB50200088D5B /* AZLineChartView.swift in Sources */,

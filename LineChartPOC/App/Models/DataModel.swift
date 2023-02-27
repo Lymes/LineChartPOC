@@ -12,12 +12,17 @@ import Foundation
 //
 final class DataPoint: Decodable {
     let date: Date
-    let value: Int
-    let isEvent: Bool
+    let valueY: Double
 
-    init(date: Date, value: Int, isEvent: Bool) {
+    var isEvent: Bool { false }
+    var value: Double { valueY }
+
+    init(date: Date, value: Double, isEvent: Bool = false) {
         self.date = date
-        self.value = value
-        self.isEvent = isEvent
+        self.valueY = value
     }
+}
+
+struct DataSet: Decodable {
+    let points: [DataPoint]
 }

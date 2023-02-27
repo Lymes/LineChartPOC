@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 struct AZLineChartGenericStyle: AZLineChartStyle {
 
@@ -25,7 +26,11 @@ struct AZLineChartGenericStyle: AZLineChartStyle {
     init() {
         dataColors.append(.blue)
         for _ in 0...30 {
-            dataColors.append(.random())
+            // pastels
+            let color = UIColor(hue: .random(in: 0..<360), saturation: 0.8, brightness: 0.8, alpha: 0.99)
+            // robust
+            // let color = UIColor(hue: .random(in: 0..<360), saturation: 0.6, brightness: 0.5, alpha: 0.99)
+            dataColors.append(color)
         }
     }
 }

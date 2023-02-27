@@ -18,7 +18,7 @@ final class AZLineChartDataSource {
     @Published
     var chartData: LineChartData = LineChartData()
 
-    var calculatePerformance = true {
+    var calculatePerformance = false {
         didSet {
             updateChartData()
         }

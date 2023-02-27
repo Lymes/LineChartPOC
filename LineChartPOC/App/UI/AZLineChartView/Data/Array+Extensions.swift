@@ -23,8 +23,8 @@ extension Array where Element == DataPoint {
             ChartDataEntry(
                 x: Double($0.date.timeIntervalSince1970),
                 y: calculatePerformance ?
-                    Double($0.value - (first?.value ?? 0)) / Double(first?.value ?? 0) :
-                    Double($0.value),
+                    ($0.value - (first?.value ?? 0)) / ((first?.value ?? 1) == 0 ? 1 : (first?.value ?? 1)) :
+                    $0.value,
                 data: $0
             )
         })
