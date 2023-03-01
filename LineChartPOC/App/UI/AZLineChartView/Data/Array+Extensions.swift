@@ -18,12 +18,15 @@ extension Array where Element == DataPoint {
         self.max { point1, point2 in point1.date < point2.date }?.date ?? Date()
     }
 
+    var firstOrZero: Double { first?.value ?? 0 }
+    var firstOrOne: Double { first?.value ?? 1 }
+
     func chartDataset(calculatePerformance: Bool) -> LineChartDataSet {
         LineChartDataSet(entries: map {
             ChartDataEntry(
                 x: Double($0.date.timeIntervalSince1970),
                 y: calculatePerformance ?
-                    ($0.value - (first?.value ?? 0)) / ((first?.value ?? 1) == 0 ? 1 : (first?.value ?? 1)) :
+                    ($0.value - firstOrZero) / (firstOrOne == 0 ? 1 : firstOrOne) :
                     $0.value,
                 data: $0
             )
