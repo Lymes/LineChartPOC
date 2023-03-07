@@ -11,6 +11,7 @@ import CoreGraphics
 import Foundation
 
 final class AZLineChartMarkerView: UIView {
+    // MARK: - Properties
     static let contextWidth: CGFloat = 50.0
 
     var chartView: AZLineChartView? {
@@ -40,8 +41,7 @@ final class AZLineChartMarkerView: UIView {
         return point
     }
 
-    // MARK: Lifecycle
-
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .clear
@@ -51,6 +51,7 @@ final class AZLineChartMarkerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Public Methods
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         guard let context = UIGraphicsGetCurrentContext() else { return }
@@ -80,8 +81,7 @@ final class AZLineChartMarkerView: UIView {
         }
     }
 
-    // MARK: Private functions
-
+    // MARK: - Private Methods
     private func updatePosition() {
         frame = CGRect(x: max(0, point.x - Self.contextWidth / 2.0),
                        y: 0, width: Self.contextWidth, height: chartView?.frame.height ?? 0)

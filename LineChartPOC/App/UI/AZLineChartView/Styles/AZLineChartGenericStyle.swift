@@ -24,12 +24,14 @@ struct AZLineChartGenericStyle: AZLineChartStyle {
     var dataColors: [UIColor] = []
 
     init() {
-        dataColors.append(.blue)
+        // dataColors.append(.blue)
         for _ in 0...30 {
             // pastels
-            let color = UIColor(hue: .random(in: 0..<360), saturation: 0.8, brightness: 0.8, alpha: 0.99)
+            // let color = UIColor(hue: .random(in: 0..<360), saturation: 0.8, brightness: 0.8, alpha: 0.99)
             // robust
             // let color = UIColor(hue: .random(in: 0..<360), saturation: 0.6, brightness: 0.5, alpha: 0.99)
+            // HLCA
+            let color = UIColor(hue: .random(in: 0..<1.0), luminance: 0.7, chroma: 0.9, alpha: 0.99)
             dataColors.append(color)
         }
     }
