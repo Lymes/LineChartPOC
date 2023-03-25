@@ -1,30 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCq-S8-Bna">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="vDs-vm-c3Z">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavigationController" id="HWB-HT-5qG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mox-Wa-qPn">
+                        <rect key="frame" x="0.0" y="24" width="1180" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yqb-BB-yWG" kind="relationship" relationship="rootViewController" id="l3l-oo-unB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyv-UM-NSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766" y="-875"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="4Vx-7r-MgI">
+            <objects>
+                <viewController id="yqb-BB-yWG" customClass="MainViewController" customModule="LineChartPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CeM-OM-ceJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-Vm-koY">
+                                <rect key="frame" x="497" y="333" width="186" height="154"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkK-XT-oq1">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Line Chart"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="fko-WX-lBF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuT-qY-EYD">
+                                        <rect key="frame" x="0.0" y="96" width="186" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Table Chart"/>
+                                        <connections>
+                                            <segue destination="MCq-S8-Bna" kind="show" id="hF5-1U-nka"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iKe-z0-PiR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DeI-Vm-koY" firstAttribute="centerX" secondItem="CeM-OM-ceJ" secondAttribute="centerX" id="Wr6-s2-yX2"/>
+                            <constraint firstItem="DeI-Vm-koY" firstAttribute="centerY" secondItem="CeM-OM-ceJ" secondAttribute="centerY" id="iz6-tU-tv8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5qX-kO-vZn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBU-pd-UKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="-874"/>
+        </scene>
+        <!--Line Chart View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LineChartPOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LineChartViewController" customModule="LineChartPOC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-b9-0P4" customClass="AZLineChartView" customModule="LineChartPOC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="84" width="820" height="876"/>
+                                <rect key="frame" x="0.0" y="134" width="1180" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CcU-EE-kLj">
-                                <rect key="frame" x="24" y="1000" width="772" height="34.5"/>
+                                <rect key="frame" x="24" y="640" width="1132" height="34.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdx-k2-6rh">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="277" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Zoom Full"/>
                                         <connections>
@@ -32,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHw-MX-kCZ">
-                                        <rect key="frame" x="195" y="0.0" width="187" height="34.5"/>
+                                        <rect key="frame" x="285" y="0.0" width="277" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Remove Markers"/>
                                         <connections>
@@ -40,7 +102,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-uq-XWw">
-                                        <rect key="frame" x="390" y="0.0" width="187" height="34.5"/>
+                                        <rect key="frame" x="570" y="0.0" width="277" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Toggle Performance"/>
                                         <connections>
@@ -48,7 +110,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-Yc-4Oz">
-                                        <rect key="frame" x="585" y="0.0" width="187" height="34.5"/>
+                                        <rect key="frame" x="855" y="0.0" width="277" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Toggle Events"/>
                                         <connections>
@@ -70,13 +132,50 @@
                             <constraint firstItem="eBg-b9-0P4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l8f-YL-vec"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="P6V-RI-j08"/>
                     <connections>
                         <outlet property="chartView" destination="eBg-b9-0P4" id="lHa-Fu-zYV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.824427480916029" y="18.30985915492958"/>
+            <point key="canvasLocation" x="830" y="-1378"/>
+        </scene>
+        <!--Table Chart View Controller-->
+        <scene sceneID="W4G-zY-Klw">
+            <objects>
+                <viewController id="MCq-S8-Bna" customClass="TableChartViewController" customModule="LineChartPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YYj-R3-crX">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TGN-yI-UhI" customClass="TableChartView" customModule="LineChartPOC" customModuleProvider="target">
+                                <rect key="frame" x="96" y="174" width="988" height="526"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="urj-MJ-mAL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="urj-MJ-mAL" firstAttribute="trailing" secondItem="TGN-yI-UhI" secondAttribute="trailing" constant="96" id="Gjh-Mx-oGe"/>
+                            <constraint firstItem="TGN-yI-UhI" firstAttribute="leading" secondItem="urj-MJ-mAL" secondAttribute="leading" constant="96" id="NNu-UP-DTw"/>
+                            <constraint firstItem="TGN-yI-UhI" firstAttribute="top" secondItem="urj-MJ-mAL" secondAttribute="top" constant="100" id="h9m-vt-qGV"/>
+                            <constraint firstItem="urj-MJ-mAL" firstAttribute="bottom" secondItem="TGN-yI-UhI" secondAttribute="bottom" constant="100" id="q7S-gK-8kw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R6c-IH-0pP"/>
+                    <connections>
+                        <outlet property="tableView" destination="TGN-yI-UhI" id="PUQ-cH-y2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUL-2C-o5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.83050847457628" y="-443.41463414634143"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

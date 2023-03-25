@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LineChartViewController.swift
 //  LineChartPOC
 //
 //  Created by Leonid Mesentsev on 03/02/23.
@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-final class ViewController: UIViewController {
+final class LineChartViewController: UIViewController {
 
     // MARK: UI controls
 
@@ -17,7 +17,7 @@ final class ViewController: UIViewController {
     // MARK: Private properties
 
     private let datasource = AZLineChartDataSource()
-    private let viewModel = ViewModel()
+    private let viewModel = LineChartViewModel()
     private var cancellable: AnyCancellable?
 
     // MARK: Lyfecycle
@@ -58,4 +58,7 @@ final class ViewController: UIViewController {
         chartView.toggleEvents()
     }
 
+    deinit {
+        print("\(self) deallocated")
+    }
 }

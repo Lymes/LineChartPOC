@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		1B92CE8B298DAEE800088D5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CE8A298DAEE800088D5B /* AppDelegate.swift */; };
 		1B92CE8D298DAEE800088D5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CE8C298DAEE800088D5B /* SceneDelegate.swift */; };
-		1B92CE8F298DAEE800088D5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CE8E298DAEE800088D5B /* ViewController.swift */; };
+		1B92CE8F298DAEE800088D5B /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CE8E298DAEE800088D5B /* LineChartViewController.swift */; };
 		1B92CE92298DAEE800088D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B92CE90298DAEE800088D5B /* Main.storyboard */; };
 		1B92CE94298DAEEB00088D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B92CE93298DAEEB00088D5B /* Assets.xcassets */; };
 		1B92CE97298DAEEB00088D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B92CE95298DAEEB00088D5B /* LaunchScreen.storyboard */; };
 		1B92CEA3298DB05600088D5B /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1B92CEA2298DB05600088D5B /* Charts */; };
 		1B92CEA5298DB06D00088D5B /* line_data_30.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B92CEA4298DB06D00088D5B /* line_data_30.json */; };
-		1B92CEA7298DB08600088D5B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEA6298DB08600088D5B /* ViewModel.swift */; };
+		1B92CEA7298DB08600088D5B /* LineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEA6298DB08600088D5B /* LineChartViewModel.swift */; };
 		1B92CEAA298DB10000088D5B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEA9298DB10000088D5B /* DataModel.swift */; };
 		1B92CEAD298DB50200088D5B /* AZLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEAC298DB50200088D5B /* AZLineChartView.swift */; };
 		1B92CEB1298DB80500088D5B /* AZLineChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B92CEB0298DB80500088D5B /* AZLineChartDataSource.swift */; };
@@ -41,8 +41,21 @@
 		787D56912998267700F15C32 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D56902998267700F15C32 /* CALayer+Extensions.swift */; };
 		788FB0EB29B74B12006017C7 /* ColorSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FB0EA29B74B12006017C7 /* ColorSpaces.swift */; };
 		788FB0ED29B74BAF006017C7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FB0EC29B74BAF006017C7 /* UIColor+Extensions.swift */; };
+		78A9F73E29C32C3900BE3429 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9F73D29C32C3900BE3429 /* MainViewController.swift */; };
+		78A9F74129C32CE500BE3429 /* TableChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9F74029C32CE500BE3429 /* TableChartViewController.swift */; };
+		78A9F74429C32FA000BE3429 /* TableChartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9F74329C32FA000BE3429 /* TableChartViewCell.swift */; };
+		78A9F74929C3316500BE3429 /* TableChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9F74829C3316500BE3429 /* TableChartDataSource.swift */; };
+		78A9F74B29C331D600BE3429 /* TableChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9F74A29C331D600BE3429 /* TableChartModel.swift */; };
 		78B70E4D2998CEF0005310B1 /* AZLineChartControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78B70E4C2998CEEF005310B1 /* AZLineChartControlsView.xib */; };
 		78B70E502998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B70E4F2998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift */; };
+		78F3754E29CDF41500082AAB /* TableChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3754D29CDF41500082AAB /* TableChartViewModel.swift */; };
+		78F3755029CE01F700082AAB /* TableChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3754F29CE01F700082AAB /* TableChartView.swift */; };
+		78F3755329CE031F00082AAB /* TableChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3755229CE031F00082AAB /* TableChartHeaderView.swift */; };
+		78F3755529CE040A00082AAB /* TableChartHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F3755429CE040A00082AAB /* TableChartHeaderView.xib */; };
+		78F3755829CE088E00082AAB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3755729CE088E00082AAB /* UIView+Extensions.swift */; };
+		78F3755C29CE0B7B00082AAB /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3755B29CE0B7B00082AAB /* Collection+Extensions.swift */; };
+		78F3756029CE150F00082AAB /* TableChartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F3755F29CE150F00082AAB /* TableChartViewCell.xib */; };
+		78F3756229CE406E00082AAB /* TableChartViewCell+Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F3756129CE406E00082AAB /* TableChartViewCell+Chart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +72,13 @@
 		1B92CE87298DAEE800088D5B /* LineChartPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChartPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B92CE8A298DAEE800088D5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B92CE8C298DAEE800088D5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B92CE8E298DAEE800088D5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B92CE8E298DAEE800088D5B /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		1B92CE91298DAEE800088D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B92CE93298DAEEB00088D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B92CE96298DAEEB00088D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B92CE98298DAEEB00088D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B92CEA4298DB06D00088D5B /* line_data_30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = line_data_30.json; sourceTree = "<group>"; };
-		1B92CEA6298DB08600088D5B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1B92CEA6298DB08600088D5B /* LineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewModel.swift; sourceTree = "<group>"; };
 		1B92CEA9298DB10000088D5B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		1B92CEAC298DB50200088D5B /* AZLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartView.swift; sourceTree = "<group>"; };
 		1B92CEB0298DB80500088D5B /* AZLineChartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZLineChartDataSource.swift; sourceTree = "<group>"; };
@@ -92,8 +105,21 @@
 		787D56902998267700F15C32 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
 		788FB0EA29B74B12006017C7 /* ColorSpaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpaces.swift; sourceTree = "<group>"; };
 		788FB0EC29B74BAF006017C7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		78A9F73D29C32C3900BE3429 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = UI/MainViewController.swift; sourceTree = "<group>"; };
+		78A9F74029C32CE500BE3429 /* TableChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartViewController.swift; sourceTree = "<group>"; };
+		78A9F74329C32FA000BE3429 /* TableChartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartViewCell.swift; sourceTree = "<group>"; };
+		78A9F74829C3316500BE3429 /* TableChartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartDataSource.swift; sourceTree = "<group>"; };
+		78A9F74A29C331D600BE3429 /* TableChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartModel.swift; sourceTree = "<group>"; };
 		78B70E4C2998CEEF005310B1 /* AZLineChartControlsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AZLineChartControlsView.xib; sourceTree = "<group>"; };
 		78B70E4F2998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZLineChartLegendView+Balloon.swift"; sourceTree = "<group>"; };
+		78F3754D29CDF41500082AAB /* TableChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartViewModel.swift; sourceTree = "<group>"; };
+		78F3754F29CE01F700082AAB /* TableChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartView.swift; sourceTree = "<group>"; };
+		78F3755229CE031F00082AAB /* TableChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChartHeaderView.swift; sourceTree = "<group>"; };
+		78F3755429CE040A00082AAB /* TableChartHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableChartHeaderView.xib; sourceTree = "<group>"; };
+		78F3755729CE088E00082AAB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		78F3755B29CE0B7B00082AAB /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		78F3755F29CE150F00082AAB /* TableChartViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableChartViewCell.xib; sourceTree = "<group>"; };
+		78F3756129CE406E00082AAB /* TableChartViewCell+Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableChartViewCell+Chart.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +172,8 @@
 		1B92CE9E298DAF0500088D5B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1B92CEAB298DB4D000088D5B /* AZLineChartView */,
-				1B92CE8E298DAEE800088D5B /* ViewController.swift */,
-				1B92CEA6298DB08600088D5B /* ViewModel.swift */,
+				78A9F73F29C32CC600BE3429 /* TableChart */,
+				78A9F73C29C32BF700BE3429 /* LineChart */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -173,6 +198,7 @@
 				1B92CEA8298DB0E300088D5B /* Models */,
 				1B92CE9E298DAF0500088D5B /* UI */,
 				1B92CE8A298DAEE800088D5B /* AppDelegate.swift */,
+				78A9F73D29C32C3900BE3429 /* MainViewController.swift */,
 				1B92CE8C298DAEE800088D5B /* SceneDelegate.swift */,
 			);
 			path = App;
@@ -182,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				1B92CEA9298DB10000088D5B /* DataModel.swift */,
+				78A9F74A29C331D600BE3429 /* TableChartModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +243,8 @@
 				787D56902998267700F15C32 /* CALayer+Extensions.swift */,
 				788FB0EA29B74B12006017C7 /* ColorSpaces.swift */,
 				788FB0EC29B74BAF006017C7 /* UIColor+Extensions.swift */,
+				78F3755729CE088E00082AAB /* UIView+Extensions.swift */,
+				78F3755B29CE0B7B00082AAB /* Collection+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -284,6 +313,46 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		78A9F73C29C32BF700BE3429 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				1B92CEAB298DB4D000088D5B /* AZLineChartView */,
+				1B92CE8E298DAEE800088D5B /* LineChartViewController.swift */,
+				1B92CEA6298DB08600088D5B /* LineChartViewModel.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		78A9F73F29C32CC600BE3429 /* TableChart */ = {
+			isa = PBXGroup;
+			children = (
+				78A9F74729C3311600BE3429 /* Datasources */,
+				78F3755129CE01FF00082AAB /* TableView */,
+				78A9F74229C32F6900BE3429 /* Cells */,
+				78A9F74029C32CE500BE3429 /* TableChartViewController.swift */,
+				78F3754D29CDF41500082AAB /* TableChartViewModel.swift */,
+			);
+			path = TableChart;
+			sourceTree = "<group>";
+		};
+		78A9F74229C32F6900BE3429 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				78A9F74329C32FA000BE3429 /* TableChartViewCell.swift */,
+				78F3756129CE406E00082AAB /* TableChartViewCell+Chart.swift */,
+				78F3755F29CE150F00082AAB /* TableChartViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		78A9F74729C3311600BE3429 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				78A9F74829C3316500BE3429 /* TableChartDataSource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
 		78B70E4E2998CEF8005310B1 /* Legend */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +362,24 @@
 				78B70E4F2998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift */,
 			);
 			path = Legend;
+			sourceTree = "<group>";
+		};
+		78F3755129CE01FF00082AAB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				78F3755629CE078600082AAB /* Header */,
+				78F3754F29CE01F700082AAB /* TableChartView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		78F3755629CE078600082AAB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				78F3755229CE031F00082AAB /* TableChartHeaderView.swift */,
+				78F3755429CE040A00082AAB /* TableChartHeaderView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,8 +473,10 @@
 				78B70E4D2998CEF0005310B1 /* AZLineChartControlsView.xib in Resources */,
 				1B92CEA5298DB06D00088D5B /* line_data_30.json in Resources */,
 				7876102D29AD13B7003ED18C /* GraphLineresponse.json in Resources */,
+				78F3756029CE150F00082AAB /* TableChartViewCell.xib in Resources */,
 				787D56862997CF0500F15C32 /* AZLineChartLegendView.xib in Resources */,
 				787D56882997E13300F15C32 /* AZLegendViewCell.xib in Resources */,
+				78F3755529CE040A00082AAB /* TableChartHeaderView.xib in Resources */,
 				1B92CE97298DAEEB00088D5B /* LaunchScreen.storyboard in Resources */,
 				1B92CE94298DAEEB00088D5B /* Assets.xcassets in Resources */,
 				1B92CE92298DAEE800088D5B /* Main.storyboard in Resources */,
@@ -432,8 +521,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B92CEC6298E789B00088D5B /* DataPointInterpolator.swift in Sources */,
+				78A9F73E29C32C3900BE3429 /* MainViewController.swift in Sources */,
+				78F3755C29CE0B7B00082AAB /* Collection+Extensions.swift in Sources */,
 				787D568A2997E1A200F15C32 /* AZLegendViewCell.swift in Sources */,
 				787115FF29914BD000A351B8 /* AZLineChartXAxisRenderer.swift in Sources */,
+				78A9F74929C3316500BE3429 /* TableChartDataSource.swift in Sources */,
+				78F3755329CE031F00082AAB /* TableChartHeaderView.swift in Sources */,
+				78F3755829CE088E00082AAB /* UIView+Extensions.swift in Sources */,
 				1B92CEAD298DB50200088D5B /* AZLineChartView.swift in Sources */,
 				1BB43B21298FB5F6000F99E6 /* AZLineChartView+Gestures.swift in Sources */,
 				782069AF2998CA1600D1C495 /* AZLineChartView+Controls.swift in Sources */,
@@ -445,17 +539,23 @@
 				788FB0ED29B74BAF006017C7 /* UIColor+Extensions.swift in Sources */,
 				1BB43B272990282D000F99E6 /* AZLineChartStyle.swift in Sources */,
 				1B92CEAA298DB10000088D5B /* DataModel.swift in Sources */,
+				78F3756229CE406E00082AAB /* TableChartViewCell+Chart.swift in Sources */,
 				1B92CEB1298DB80500088D5B /* AZLineChartDataSource.swift in Sources */,
 				782069AB2998C62800D1C495 /* AZLineChartControlsView.swift in Sources */,
-				1B92CE8F298DAEE800088D5B /* ViewController.swift in Sources */,
+				78A9F74B29C331D600BE3429 /* TableChartModel.swift in Sources */,
+				1B92CE8F298DAEE800088D5B /* LineChartViewController.swift in Sources */,
 				1BB43B29299028D8000F99E6 /* AZLineChartGenericStyle.swift in Sources */,
 				1BB43B1B298F96D0000F99E6 /* AZLineChartXFormatter.swift in Sources */,
 				1B92CE8B298DAEE800088D5B /* AppDelegate.swift in Sources */,
 				788FB0EB29B74B12006017C7 /* ColorSpaces.swift in Sources */,
 				787D56912998267700F15C32 /* CALayer+Extensions.swift in Sources */,
-				1B92CEA7298DB08600088D5B /* ViewModel.swift in Sources */,
+				78F3754E29CDF41500082AAB /* TableChartViewModel.swift in Sources */,
+				78A9F74429C32FA000BE3429 /* TableChartViewCell.swift in Sources */,
+				1B92CEA7298DB08600088D5B /* LineChartViewModel.swift in Sources */,
 				1B92CE8D298DAEE800088D5B /* SceneDelegate.swift in Sources */,
 				78B70E502998EC5E005310B1 /* AZLineChartLegendView+Balloon.swift in Sources */,
+				78F3755029CE01F700082AAB /* TableChartView.swift in Sources */,
+				78A9F74129C32CE500BE3429 /* TableChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
