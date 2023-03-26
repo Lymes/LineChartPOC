@@ -56,7 +56,8 @@ final class TableChartViewCell: UITableViewCell {
         selectionStyle = .none
         colorView.layer.cornerRadius = 2
         colorView.clipsToBounds = true
-        chartBar.backgroundColor = viewModel?.color
+        chartBar.backgroundColor = (viewModel?.data1 ?? 0) > 0 ?
+            .init(named: "PositiveGreen") : .init(named: "NegativeRed")
         updateChart(0)
     }
 

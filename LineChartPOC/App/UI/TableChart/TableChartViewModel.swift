@@ -17,7 +17,7 @@ final class TableChartViewModel: NSObject {
     // MARK: - Properties
 
     /// Larghezza delle barre
-    var barChartWidth: CGFloat = 32
+    var barChartWidth: CGFloat = 20
 
     /// Durata delle animazioni, 0 per disabilitare le animazioni del tutto
     var animationDuration: Double = 0.5
