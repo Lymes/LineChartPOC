@@ -10,13 +10,22 @@ import Combine
 
 final class TableChartViewModel: NSObject {
 
+    // MARK: - Publshed
+    let showChart: CurrentValueSubject<Bool, Never> = CurrentValueSubject(false)
+    let dataSet: CurrentValueSubject<[TableChartRowModel], Never> = CurrentValueSubject([])
+
+    // MARK: - Properties
+
+    /// Larghezza delle barre
     var barChartWidth: CGFloat = 32
 
-    let showChart: CurrentValueSubject<Bool, Never> = CurrentValueSubject(false)
+    /// Durata delle animazioni, 0 per disabilitare le animazioni del tutto
+    var animationDuration: Double = 0.5
 
-    @Published
-    var dataSet: [TableChartRowModel] = []
+    /// Animare le barre durante lo scroll
+    var animateOnScroll: Bool = true
 
+    /// Labels del header
     let labels: [String] = [
         "Linee",
         "Performance a 1 anno",
@@ -27,9 +36,11 @@ final class TableChartViewModel: NSObject {
         "Performance a 2 anni"
     ]
 
+    // MARK: - Public Methods
+
     // swiftlint:disable function_body_length
     func loadData() {
-        dataSet = [
+        dataSet.send([
             TableChartRowModel(
                 title: "X-TEAM Team BlackRock1",
                 data1: 9.6, data2: 5.7, data3: 1.4, data4: 0.4, data5: 16.3, data6: 8.8,
@@ -42,7 +53,7 @@ final class TableChartViewModel: NSObject {
             ),
             TableChartRowModel(
                 title: "X-TEAM Team BlackRock3",
-                data1: -9.6, data2: 5.7, data3: 1.4, data4: 0.4, data5: 16.3, data6: 8.8,
+                data1: 9.6, data2: 5.7, data3: 1.4, data4: 0.4, data5: 16.3, data6: 8.8,
                 color: UIColor(hue: 40.0 / 360.0, luminance: 0.7, chroma: 0.9, alpha: 0.99)
             ),
             TableChartRowModel(
@@ -52,7 +63,7 @@ final class TableChartViewModel: NSObject {
             ),
             TableChartRowModel(
                 title: "X-TEAM Team BlackRock5",
-                data1: 9.6, data2: 5.7, data3: 1.4, data4: 0.4, data5: 16.3, data6: 8.8,
+                data1: -9.6, data2: 5.7, data3: 1.4, data4: 0.4, data5: 16.3, data6: 8.8,
                 color: UIColor(hue: 80.0 / 360.0, luminance: 0.7, chroma: 0.9, alpha: 0.99)
             ),
             TableChartRowModel(
@@ -125,6 +136,6 @@ final class TableChartViewModel: NSObject {
                 data1: 2.3, data2: 5.7, data3: 1.4, data4: 0.4, data5: 16.3, data6: 8.8,
                 color: UIColor(hue: 360.0 / 360.0, luminance: 0.7, chroma: 0.9, alpha: 0.99)
             )
-        ]
+        ])
     }
 }

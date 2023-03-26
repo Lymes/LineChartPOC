@@ -5,7 +5,6 @@
 //  Created by leonid.mesentsev on 16/03/23.
 //
 
-import Foundation
 import UIKit
 
 struct TableChartRowModel: Hashable {
@@ -18,7 +17,6 @@ struct TableChartRowModel: Hashable {
     let data6: Double
     let color: UIColor
 }
-
 
 extension Array where Element == TableChartRowModel {
 

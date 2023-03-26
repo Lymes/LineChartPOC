@@ -28,6 +28,10 @@ final class TableChartViewController: UIViewController {
         viewModel.loadData()
     }
 
+    deinit {
+        print("\(self) deallocated")
+    }
+
     // MARK: - Private Methods
     private func setupTable() {
         tableView.tableViewModel = viewModel
@@ -38,12 +42,8 @@ final class TableChartViewController: UIViewController {
     }
 
     private func setupObservers() {
-        cancellable = viewModel.$dataSet.sink { [weak self] data in
+        cancellable = viewModel.dataSet.dropFirst().sink { [weak self] data in
             self?.dataSource?.setData(rows: data)
         }
-    }
-
-    deinit {
-        print("\(self) deallocated")
     }
 }

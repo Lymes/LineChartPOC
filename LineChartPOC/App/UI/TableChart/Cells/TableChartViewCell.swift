@@ -44,12 +44,11 @@ final class TableChartViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCell()
-        updateChart(0)
     }
 
     override func prepareForReuse() {
+        super.prepareForReuse()
         setupCell()
-        updateChart(0)
     }
 
     // MARK: - Private Methods
@@ -58,22 +57,23 @@ final class TableChartViewCell: UITableViewCell {
         colorView.layer.cornerRadius = 2
         colorView.clipsToBounds = true
         chartBar.backgroundColor = viewModel?.color
+        updateChart(0)
     }
 
     private func setupObservers() {
-        updateChart(0)
-        cancellable = tableViewModel?.showChart.sink { [weak self] _ in
-            self?.updateChart()
+        cancellable = tableViewModel?.showChart.dropFirst().sink { [weak self] _ in
+            self?.updateChart(self?.tableViewModel?.animationDuration ?? 0)
         }
     }
 
-    private func updateChart(_ duration: CGFloat = 0.4) {
+    private func updateChart(_ duration: CGFloat) {
         UIView.animate(withDuration: duration) {
             self.dataContainer?.alpha = (self.tableViewModel?.showChart.value ?? false) ? 0 : 1
             self.chartContainer.alpha = (self.tableViewModel?.showChart.value ?? false) ? 1 : 0
         }
         layoutIfNeeded()
-        drawChart()
+        drawChart((self.tableViewModel?.animateOnScroll ?? false) ?
+                  self.tableViewModel?.animationDuration ?? 0: duration)
     }
 
     private func setupLabels() {

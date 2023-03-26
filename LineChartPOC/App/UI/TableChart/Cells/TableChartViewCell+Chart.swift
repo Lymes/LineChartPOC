@@ -10,12 +10,12 @@ import UIKit
 extension TableChartViewCell {
 
     var showingChart: Bool { tableViewModel?.showChart.value ?? false }
-    var minPerformance: Double { tableViewModel?.dataSet.minPerformance ?? 0 }
-    var maxPerformance: Double { tableViewModel?.dataSet.maxPerformance ?? 0 }
-    var maxScale: Double { tableViewModel?.dataSet.maxScale ?? 0 }
+    var minPerformance: Double { tableViewModel?.dataSet.value.minPerformance ?? 0 }
+    var maxPerformance: Double { tableViewModel?.dataSet.value.maxPerformance ?? 0 }
+    var maxScale: Double { tableViewModel?.dataSet.value.maxScale ?? 0 }
     var barChartWidth: CGFloat { tableViewModel?.barChartWidth ?? 0 }
 
-    func drawChart() {
+    func drawChart(_ duration: Double = 0.4) {
         guard maxScale != 0 else { return }
 
         let maxHeight = bounds.height
@@ -40,7 +40,7 @@ extension TableChartViewCell {
         )
 
         self.chartBar.frame = showingChart ? initBarFrame : finalBarFrame
-        UIView.animate(withDuration: 0.4) {
+        UIView.animate(withDuration: duration) {
             self.chartBar.frame = self.showingChart ? finalBarFrame : initBarFrame
         }
     }

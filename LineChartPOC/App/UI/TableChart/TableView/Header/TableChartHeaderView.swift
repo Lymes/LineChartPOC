@@ -25,7 +25,7 @@ final class TableChartHeaderView: UIView {
     weak var tableViewModel: TableChartViewModel? {
         didSet {
             setupLabels()
-            updateTitle()
+            updateTitle(0)
         }
     }
     private var dataTitle: UIView? { perf2Label.superview }
@@ -38,12 +38,12 @@ final class TableChartHeaderView: UIView {
 
     // MARK: - Private Methods
     @objc private func performanceTapped() {
-        tableViewModel?.showChart.value.toggle()
-        updateTitle()
+        tableViewModel?.showChart.send(!(tableViewModel?.showChart.value ?? false))
+        updateTitle(tableViewModel?.animationDuration ?? 0)
     }
 
-    private func updateTitle() {
-        UIView.animate(withDuration: 0.4) {
+    private func updateTitle(_ duration: Double) {
+        UIView.animate(withDuration: duration) {
             self.chartTitle.alpha = (self.tableViewModel?.showChart.value ?? false) ? 1 : 0
             self.dataTitle?.alpha = (self.tableViewModel?.showChart.value ?? false) ? 0 : 1
         }
@@ -61,8 +61,8 @@ final class TableChartHeaderView: UIView {
     }
 
     private func updateChartLabels() {
-        let maxScale = tableViewModel?.dataSet.maxScale ?? 0
-        let minValue = (tableViewModel?.dataSet.minPerformance ?? 0) < 0 ? -maxScale : 0
+        let maxScale = tableViewModel?.dataSet.value.maxScale ?? 0
+        let minValue = (tableViewModel?.dataSet.value.minPerformance ?? 0) < 0 ? -maxScale : 0
         minPerfLabel.text = "\(minValue)%"
         medPerfLabel.text = "\((abs(maxScale) - abs(minValue)) / 2)%"
         maxPerfLabel.text = "\(maxScale)%"
